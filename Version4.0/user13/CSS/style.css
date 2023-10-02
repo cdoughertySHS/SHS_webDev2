@@ -31,11 +31,11 @@ th {
 	cursor: pointer;
 }
 
-.button1 {
+.button-smallRadius {
 	border-radius: 8px;
 }
 
-.button2 {
+.button-largeRadius {
 	border-radius: 30%;
 }
 
@@ -75,3 +75,20 @@ h1, h2, h3, h4, h5, h6{
   .title-small {
 	font-size: .5rem;
   }
+  
+  #morecontent {
+	background-color: yellow;
+  }
+  
+  #hirebutton{
+	background-color:aqua;
+  }
+
+  #footertable{
+	background-color:Pink;
+  }
+  
+  *{
+    text-align:right;
+    border: 2px solid rgb(255, 255, 255);
+}
