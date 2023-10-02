@@ -11,11 +11,11 @@
 	cursor: pointer;
 }
 
-.button1 {
+.button-smallRadius {
 	border-radius: 8px;
 }
 
-.button2 {
+.button-largeRadius {
 	border-radius: 30%;
 }
 
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6{
 .mybutton1{
 	background-color: red;
 	color: white;
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 100%;
 	padding: 10px;
 }
@@ -50,11 +50,39 @@ h1, h2, h3, h4, h5, h6{
 	border: 2px solid black;
 	border-radius: 200%;
 	padding: 25px;
-	rotate: 50deg;
+	rotate: 90deg;
 }
 
 .mybutton3{
 	background-color: blue;
 	color: black;
-	border: black;
+	border: 3px solid black;
+	padding: 5px;
 }
+
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+   }
+   
+   .title-large {
+		font-size: 2rem;
+		color: red;
+   }
+   
+   .title-small {
+		font-size: .5rem;
+   }
+   
+   #morecontent {
+		background-color: yellow;
+  }
+
+#hireButtons {
+	background-color: red;
+}
+
+*{
+	text-align:center;
+	border: 1px solid black;
+ }
