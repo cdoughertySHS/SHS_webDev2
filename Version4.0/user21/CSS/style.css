@@ -103,8 +103,6 @@ background-color: blue;
 background-color: #4CAF50;
 }
 
-*{
-    text-align: center;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+img {
+	width: 100%
 }
-
