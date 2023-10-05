@@ -15,7 +15,12 @@ tr {
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+	text-align: center;;
+	background-color: #003366
 }
+	
+*{
+		text-align:right;
+		color: black;
+		border: 2px solid black;
+	};
