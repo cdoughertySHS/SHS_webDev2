@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -85,15 +87,15 @@ h1, h2, h3, h4, h5, h6{
   
   .title-large {
 	font-size: 2rem;
-  }
+}
   
   .title-small {
 	font-size: .5rem;
-  }
+}
 
   #morecontent {
 	background-color: yellow;
-  }
+}
 
 #hireButtons{
 background-color: blue;
@@ -105,4 +107,25 @@ background-color: #4CAF50;
 
 img {
 	width: 100%
+}
+
+#knowledge > * {
+	border: 3px red solid;
+}   
+
+   p + * {
+	background-color: #ffff00;
+}
+
+
+div li::marker{
+	color: red;
+}
+
+div li::marker{
+	content:"😜 ";
+}
+   
+td:hover {
+	background-color: black;
 }
