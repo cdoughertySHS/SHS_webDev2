@@ -57,6 +57,29 @@
         td:hover {
             background-color: black;
         }
+
+        p {
+            display: none;
+            background-color: #ff0000;
+            color: rgb(0, 0, 255);
+            padding: 10px;
+        }
+
+        div:hover p {
+            display: block;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+
+        input:in-range {
+            border: 2px solid rgb(0, 255, 0);
+        }
+
+        input:out-of-range {
+            border: 2px solid red;
+        }
     </style>
 </head>
 
@@ -135,6 +158,14 @@
                 </tr>
             </table>
         </div>
+        <div>Come over to me to see something cool
+            <p>Is this cool huh?</p>
+          </div>
+          <form>
+           Click here--><input type="text" name="click"><br>
+            Then click here--><input type="text" name="click">
+          </form>
+          <input type="number" min="1" max="32" value="14">
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 

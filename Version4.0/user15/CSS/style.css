@@ -88,7 +88,6 @@ div li::marker{
 	color: red;
 }
 	   
-div li::marker{
+div ul li::marker{
 	content:"😜";
 }
-	   
