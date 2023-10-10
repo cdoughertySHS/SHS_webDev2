@@ -126,6 +126,24 @@ div li::marker{
 	content:"😜 ";
 }
    
-td:hover {
+#rainbow td:hover {
 	background-color: black;
 }
+
+div:hover {
+	background-color: rgb(145, 145, 233);
+}
+
+ul li:first-child {
+	color: rgb(201, 48, 193);
+}
+
+ul {
+	display: none;
+	background-color: yellow;
+	padding: 20px;
+  }
+  
+  div:hover ul {
+	display: block;
+  }
