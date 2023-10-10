@@ -57,6 +57,20 @@
         div > li::marker{
             content:"😜 ";
         }
+        ul > li:hover{
+            color: purple;
+        }
+        #secrets {
+            display: none;
+            background-color:lightgray;
+            padding: 20px;
+        }
+        #Secrets:hover #secrets{
+            display: block;
+        }
+        p:first-child {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -109,6 +123,14 @@
                 </ul>
             </li>
         </div>
+        <div>
+            <p>
+                The first child
+            </p>
+            <p>
+                The second child
+            </p>
+        </div>
         <p>
             These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
         </p>
@@ -116,7 +138,7 @@
             I will use my knowledge to create an amazing website for you and your needs.
         </p>
         <p>
-            
+
         </p>
         <div>
             <table id="rainbow">
@@ -137,6 +159,14 @@
                     </td>
                 </tr>
             </table>
+        </div>
+        <div id="Secrets">
+            <p>
+                Secrets?
+            </p>
+            <p id="secrets">
+                Secrets!!!
+            </p>
         </div>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
