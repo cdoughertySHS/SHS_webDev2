@@ -1,3 +1,5 @@
+@import url(Rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -11,11 +13,11 @@
 	cursor: pointer;
 }
 
-.Button-SmallRadius {
+.button1 {
 	border-radius: 8px;
 }
 
-.Button-LargeRadius {
+.button2 {
 	border-radius: 30%;
 }
 
@@ -34,42 +36,43 @@ table{
 
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
-}	
-
-
-.JAVIN{
-	background-color: cyan;
-	color:red;
 }
 
-.FRIDGE{
-	background-color: black;
-	color: lime;
+#knowledge > * {
+	border: 3px red solid;
+
+  }
+   p + * {
+ background-color: #FFFF00;
 }
 
-.IDK{
-	background-color: blue;
-	color:cyan;
-}
-
-.title{
+div li::marker{
 	color: red;
-	font-family: 'Trebuchet MS', sans-serif; 
+   }
+   div ol li::marker{
+	content:"😜 ";
+   }
+
+   #rainbow td:hover {
+	background-color: black;
+   }
+
+   div ul li::marker{
+	content:"😜 ";
+
+   }
+
+ #footerTable td:hover {
+	color: blue;
+   }
+   #footerTable td:active {
+	color: cyan;
   }
+  li:hover {
+	color: limegreen;
+   }
+    li:active {
+	color: cyan;
+  }
+
   
-  .title-large {
-	font-size: 2rem;
-  }
-  
-  .title-small {
-	font-size: .5rem;
-  }
-  #morecontent{
-	background-color: yellow;
-  }
-  #footerTable{
-	background-color: goldenrod;
-  }
-  #hireButtons{
-	background-color: midnightblue;
-  }
