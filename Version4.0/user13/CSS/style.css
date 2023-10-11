@@ -1,3 +1,6 @@
+	
+@import url(rainbow.css);
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -88,4 +91,34 @@ h1, h2, h3, h4, h5, h6{
 	background-color:Pink;
   }
   
- 
+  #knowledge > * {
+	border: 3px red solid;
+  }
+  
+  p + * {
+	background-color: #FFFF00;
+  }
+
+  div li::marker{
+	color: red;
+  }
+  
+  div li::marker{
+	content:"😜 ";
+  }
+
+ #rainbow td:hover {
+	background-color: black;
+  }
+  
+  ul li:first-child {
+	color: blue;
+  }
+
+  ul li:last-child {
+	color: rgb(255, 51, 0);
+  }
+
+  ul::after {
+	content: " I will use";
+  }
