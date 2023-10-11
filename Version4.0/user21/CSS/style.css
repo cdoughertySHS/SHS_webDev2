@@ -113,11 +113,6 @@ img {
 	border: 3px red solid;
 }   
 
-   p + * {
-	background-color: #ffff00;
-}
-
-
 div li::marker{
 	color: red;
 }
@@ -130,20 +125,3 @@ div li::marker{
 	background-color: black;
 }
 
-div:hover {
-	background-color: rgb(145, 145, 233);
-}
-
-ul li:first-child {
-	color: rgb(201, 48, 193);
-}
-
-ul {
-	display: none;
-	background-color: yellow;
-	padding: 20px;
-  }
-  
-  div:hover ul {
-	display: block;
-  }
