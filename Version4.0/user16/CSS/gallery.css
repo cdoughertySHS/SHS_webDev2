@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
 #gallery {
     font-family: "Orbitron", sans-serif;
     line-height: 1.5em;
@@ -12,7 +14,7 @@
 
  .flipper{
    position: relative;
-   transition: 10s;
+   transition: 1s;
    transform-style: preserve-3d;
  }
  
@@ -49,8 +51,28 @@
     transform: rotateY(180deg);
   }
   
-  
+  a {
+   color: darkgreen;
+ }
  
  
+ .caption, .back h1 {
+   font-family: "Orbitron", sans-serif;
+   font-size: 2em;
+   padding: 10px 10px 0 10px;
+   margin: 0;
+   text-align: center;
+ }
+
+
+ p.caption {
+   position: absolute;
+   bottom: 1vh;
+ }
  
+ .description {
+   font-size: 0.5em;
+   padding: 0 20px 20px 20px;
+   text-align: left;
+ }
  
