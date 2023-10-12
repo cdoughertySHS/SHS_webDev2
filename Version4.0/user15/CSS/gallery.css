@@ -48,7 +48,7 @@ img {
     }
 
 a {
-        color: black;
+        color: rgb(0, 0, 0);
     }
 
 .caption, .back h1 {
@@ -63,7 +63,7 @@ p.caption {
         position: absolute;
         bottom: 1vh;
     }
-      
+
 .description {
         font-size: 0.9em;
         padding: 0 20px 20px 20px;
