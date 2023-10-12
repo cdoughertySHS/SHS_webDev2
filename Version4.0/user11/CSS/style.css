@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6{
 	border: 3px green solid;
 }
 
-p + * {
+p  {
 	background-color: #00ff0831;
    }
 
@@ -132,14 +132,6 @@ div :hover :first-child {
 	color: blue;
 }
 
-div :hover :first-child {
-	color: blue;
-}
-
-div :hover :nth-last-child(2) {
-	color: green;
-}
-
 div :hover :nth-last-child(2) {
 	color: green;
 }
@@ -148,6 +140,6 @@ div :hover :last-child {
 	color: red;
 }
 
-div :hover :last-child {
-	color: red;
+td :hover{
+	background-color: #188609;
 }
