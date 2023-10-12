@@ -32,86 +32,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
-    <style type="text/css">
-        .menu {
-            margin: 0;
-            padding: 0;
-        }
-
-        .wideMargin {
-            margin: 15px;
-        }
-
-        footer {
-            font-size: 12px;
-            text-align: center;
-        }
-
-        #rainbow {
-            width: 100%;
-        }
-        #gallery {
-            font-family: "Orbitron", sans-serif;
-            line-height: 1.5em;
-             text-align: center;
-        }
-        .container-card {
-            display: inline-block;
-             margin: 3%;
-            perspective: 1000px;
-        }
-        .flipper {
-             position: relative;    
-             transition: 0.6s;
-            transform-style: preserve-3d;
-        }
-        .front, .back {
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 250px;
-             height: 320px;
-             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-             backface-visibility: hidden;
-        }
-        .front{
-            z-index:2;
-        }
-
-        .back{
-            transform:rotateY(180deg);
-        }
-        .img {
-            width: 100%;
-        }
-        .container-card, .front, .back {
-            width: 250px;
-            height: 320px;
-        }
-        .container-card:hover .flipper {
-            transform: rotateY(180deg);
-        }
-        .a {
-            color: rgb(18, 205, 33);
-        }
-        .caption, .back h1 {
-            font-family: "Orbitron", sans-serif;
-            font-size: 1.7em;
-            padding: 10px 10px 0 10px;
-            margin: 0;
-            text-align: center;
-        }
-        p.caption {
-            position: absolute;
-            bottom: 1vh;
-        }
-
-        .description {
-             font-size: 0.9em;
-             padding: 0 20px 20px 20px;
-            text-align: left;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -193,7 +114,24 @@
                 </div>
               </div>
             </div>
+            
+          
+              <div class="container">
+                <div class="flipper">
+                  <div class="front">
+                    <img src="images/download.png" alt="ATX_Stick Figure">
+                    <p class="caption">Stick figure</p>
+                  </div>
+                  <div class="back">
+                    <a href="https://en.wikipedia.org/wiki/Stick_figure" target="_blank">
+                      <h1>Stick Figure</h1>
+                    </a>
+                    <p class="description">A stick figure is something you draw when your bored.</p>
+                  </div>
+                </div>
+              </div>
           </div>
+
 
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
