@@ -6,7 +6,7 @@
     text-align: center;
   }
 
-  .container-card {
+  .container {
     display: inline-block;
     margin: 3%;
     perspective: 1000px;
@@ -40,12 +40,12 @@ img {
     width: 100%;
 }
 
-.container-card, .front, .back {
+.container, .front, .back {
     width: 250px;
     height: 320px;
 }
 
-.container-card:hover .flipper {
+.container:hover .flipper {
     transform: rotateY(180deg);
 }
 
