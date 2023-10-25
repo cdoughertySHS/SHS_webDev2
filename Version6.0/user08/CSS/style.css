@@ -2,7 +2,6 @@
 /* font import template */
 .header{
     background-color: #373443;
-    height: 15%;
     width: 100%;
 }
 .center{
@@ -13,18 +12,14 @@
 }
 .footer{
     background-color: #373443;
-    height: 10%;
     width: 100%;
 }
 .article{
     background-color: #373443;
 }
 #featuredArticles{
-    width: 20%;
-    height: 75%;
     display: flex;
 }
 .content{
-    width: 80%;
     display: flex;
 }
