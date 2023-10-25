@@ -13,35 +13,77 @@
             a {
                 color: black;
                 text-decoration: none;
+                padding: 20px; 
             }
 
             a:hover {
              background-color: blue;
              color: white; 
             }
+
+            .nav{
+                overflow: auto;
+                white-space: nowrap;
+                text-align: center; 
+            }
+
+            .about{ 
+                border: 2px; 
+                border-color: black; 
+            }
+
+            .home:hover{
+                background-color: salmon;
+                color:black; 
+            }
+
+          /*  footer {
+                margin-top: 480px; 
+            }
+
+            body {
+                min-height: 100vh;
+                display: inline-block;
+                flex-direction: column;
+            } */ 
         </style>
     </head>
 
     <body>
-        <center><h1>Salmon Says</h1></center>
+        <center><h1><a class="home" href="index.html">Salmon Says</a></h1></center>
         <div class="container">
             <div class="row">
               <center><div class="col-sm-12">
                     <nav class="nav">
-                    <a class="nav" href="#">Date</a>
-                    <a href="#">Date</a>
-                    <a href="#">Date</a>
-                    <a href="#">Date</a>
+                    <a class="nav" href="review1.html">8/2/23</a>
+                    <a class="nav" href="#">8/3/23</a>
+                    <a class="nav" href="#">8/4/23</a>
+                    <a class="nav" href="#">8/5/23</a>
+                    <a class="nav" href="#">8/29/23</a>
+                    <a class="nav" href="#">9/2/23</a>
+                    <a class="nav" href="#">9/2/23</a>
+                    <a class="nav" href="#">10/20/23</a>
                 </div> </center>
             </div>
             <br>
-          <center> <div class="row">
-                <div class="col-sm-8" 
-                    <div class="image">
-                        <img src="images/" alt="Salmon">
-                    </div>
-                </div>    
-            </div> </center>
+          <div class="row about"> 
+            <h2>About:</h2>
+            <p>Here is a description of Salmon Says and who I am.</p>
+          </div>
+          <br>
+          <div class="images">
+            <img src="images/" alt="Salmon1">
+            <img src="images/" alt="Salmon2">
+            <img src="images/" alt="Salmon3">
+          </div>
+          <div class="col-sm-12 footer"> 
+            
+        </div>
+
         </div>
     </body>
+
+    <footer>
+        <p>This is a footer. 😁</p> 
+    </footer>
 </html>
