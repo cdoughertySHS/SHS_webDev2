@@ -46,7 +46,7 @@ footer {
 .back{
     transform:rotateY(180deg);
 }
-.img {
+img {
     width: 100%;
 }
 .container, .front, .back {
