@@ -2,17 +2,15 @@
 /* font import template */
 .header{
     background-color: #373443;
-    width: 100%;
 }
 .center{
     text-align: center;
+    margin-top: 1%;
 }
-.articleTitle{
-    padding-top: 2%;
-}
+
 .footer{
     background-color: #373443;
-    width: 100%;
+    padding: 0.5%;
 }
 .article{
     background-color: #373443;
@@ -22,4 +20,13 @@
 }
 .content{
     display: flex;
+}
+/*
+ul{
+    list-style-type: none;
+}
+*/
+.sidebar{
+    background-color: #2F2D39;
+    height: 100%;
 }
