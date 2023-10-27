@@ -1,3 +1,5 @@
+@import url(display.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -76,11 +78,29 @@
 		background-color: blue;
 	  }
 
-	  *{
-		text-align:right;
-		border: 2px solid black;
-	}
-
 	#footerTable {
-		 background-color: aquamarine;
-	}
+	 background-color: aquamarine;
+
+     }    
+
+	#knowledge > * {
+    border: 3px red solid;
+   }
+
+   p + * {
+	background-color: #FFFF00;
+   }
+   
+
+   div li::marker{
+	color: red;
+   }
+   
+   div li::marker{
+	content:"😜 ";
+   }
+   
+   td:hover {
+	background-color: black;
+   }   
+
