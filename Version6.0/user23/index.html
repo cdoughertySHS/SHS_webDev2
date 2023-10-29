@@ -43,12 +43,19 @@
 
         p {
             font-size: 20vh;
-            font-family: 'Londrina Outline', sans-serif;
+            font-family: 'Londrina Outline', serif;
         }
 
-        .whatever {
-            background-image: url(images/whatevs.jpeg);
+        .canva {
+            background-image: url(images/canvaBkg.png);
+            width: 500px;
+            height: 100%;
+            background-position: center center;
+        }
 
+        span {
+            font-size: 50px;
+            color: white;
         }
 
     </style>
@@ -58,8 +65,8 @@
 <body>
     <!-------------------------- Begin the nav-bar ---------------------->
     <menu>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">Gen Z Psychology</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -73,7 +80,6 @@
                     <a href="confirmation.html" class="nav-item nav-link active">Welcome!</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
-                
             </div>
         </nav>
     </menu>
@@ -81,19 +87,13 @@
 
     <table>
         <thead>
-                <th>
-                    <br>
-                        <span style="font-family: Courier;"> Whatever it is, we are </span>
-                    <p>
-                        <span style="font-family: 'Londrina Outline', sans-serif;"> Here to Listen </span>
-                    </p>
-                </th>
+            <br>
+                <td class="canva">
+                    <span style="font-family: Courier;"> Whatever it is, we are </span>
+            <br>
+                    <span style="font-family: 'Londrina Outline', sans-serif;"> Here to Listen </span>
+                </td>
         </thead>
-
-        <tr>
-            <td class="whatever"></td>
-            <h2>Blah Blah Blah</h2>
-        </tr>
     </table>
 
 </body>
