@@ -2,3 +2,12 @@ h1 {
     color: red;
     text-align:center;
 }
+
+h2 {
+    color: black;
+    text-align: left;
+}
+
+body {
+    background-color: lightgray;
+}
