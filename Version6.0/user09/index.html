@@ -48,101 +48,116 @@
             display: inline-block;
         }
 
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
 
-        .nameplate {
-            padding: 2px 16px;
-            font-size: 1.75vw; 
-            white-space: nowrap; 
-            overflow: hidden;
-            background-color: white;
-            height:10%; 
+            .nameplate {
+                padding: 2px 16px;
+                font-size: 1.75vw; 
+                white-space: nowrap; 
+                overflow: hidden;
+                background-color: white;
+                height:10%; 
         }
 
-        #places:hover{
-            background-color: white;
-            color: black; 
+            #places:hover{
+                background-color: white;
+                color: black; 
         }
 
-        img{
-            height:10%; 
+            img{
+                height: 30%;
+                width: 200px; 
         }
 
-          /*  footer {
-                margin-top: 480px; 
-            }
+            .footer{
+                position: relative;
+                bottom: 0;
+        }
 
-            body {
-                min-height: 100vh;
-                display: inline-block;
-                flex-direction: column;
-            } */ 
+            /*main{
+                height:80vh;
+        }*/
         </style>
     </head>
 
     <body>
-        <center><h1><a class="home" href="index.html">Salmon Says</a></h1></center>
-        <div class="container">
-            <div class="row">
-              <center><div class="col-sm-12">
-                        <nav class="nav">
-                            <a class="nav" href="review1.html">8/2/23</a>
-                            <a class="nav" href="review2.html">8/3/23</a>
-                            <a class="nav" href="review3.html">8/4/23</a>
-                            <a class="nav" href="review4.html">8/5/23</a>
-                            <a class="nav" href="review5.html">8/29/23</a>
-                            <a class="nav" href="review6.html">9/2/23</a>
-                            <a class="nav" href="review7.html">9/2/23</a>
-                            <a class="nav" href="review8.html">10/20/23</a>
-                </div> </center>
+        <main>
+            <center><h1><a class="home" href="index.html">Salmon Says</a></h1></center>
+            <div class="container">
+                <div class="row">
+                <center><div class="col-sm-12">
+                            <nav class="nav">
+                                <a class="nav" href="review1.html">8/2/23</a>
+                                <a class="nav" href="review2.html">8/3/23</a>
+                                <a class="nav" href="review3.html">8/4/23</a>
+                                <a class="nav" href="review4.html">8/5/23</a>
+                                <a class="nav" href="review5.html">8/29/23</a>
+                                <a class="nav" href="review6.html">9/2/23</a>
+                                <a class="nav" href="review7.html">9/2/23</a>
+                                <a class="nav" href="review8.html">10/20/23</a>
+                    </div> </center>
+                </div>
+                <br>
+            <div class="row about"> 
+                <h2>About:</h2>
+                <p>Here is a description of Salmon Says and who I am.</p>
             </div>
             <br>
-          <div class="row about"> 
-            <h2>About:</h2>
-            <p>Here is a description of Salmon Says and who I am.</p>
-          </div>
-          <br>
-          <div class="row topthree"> 
-            <center><h3>Here are the top three right now!</h3>
-            <p>Click the resturant names to go to their review!</p></center>
-          </div>
-          <div class="card">
-            <img src="images/megs.jpg"
-                alt="Number 1" style="width:100%;">
-            <div class="nameplate">
-                <h4><b>1st Place</b></h4>
-                <a id="places" href="review4.html">
-                <p>Meg O'Malley's</p> </a>
+            <div class="row topthree"> 
+                <center><h3>Here are the top three right now!</h3>
+                <p>Click the resturant names to go to their review!</p></center>
             </div>
-        </div>
-        <div class="card">
-            <img src="images/citrussalmonnotsl.jpeg"
-                alt="Number 2" style="width:100%;"> 
-            <div class="nameplate">
-                <h4><b>2nd Place</b></h4>
-                <a id="places" href="review1.html">
-                    <p>Squid Lips</p> </a>
+            <div class="card">
+                <img src="images/megs.jpg"
+                    alt="Number 1" style="width:100%;">
+                <div class="nameplate">
+                    <h4><b>1st Place</b></h4>
+                    <a id="places" href="review4.html">
+                    <p>Meg O'Malley's</p> </a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="images/ichabods.jpg"
-                alt="Number 3" style="width:100%;">
-            <div class="nameplate">
-                <h4><b>3rd Place</b></h4>
-                <a id="places" href="review2.html">
-                    <p>Ichabod's Dockside</p> </a>
+            <div class="card">
+                <img src="images/citrussalmonnotsl.jpeg"
+                    alt="Number 2" style="width:100%;"> 
+                <div class="nameplate">
+                    <h4><b>2nd Place</b></h4>
+                    <a id="places" href="review1.html">
+                        <p>Squid Lips</p> </a>
+                </div>
             </div>
-        </div>
-          <div class="col-sm-12 footer"> 
-            
-        </div>
+            <div class="card">
+                <img src="images/ichabods.jpg"
+                    alt="Number 3" style="width:100%;">
+                <div class="nameplate">
+                    <h4><b>3rd Place</b></h4>
+                    <a id="places" href="review2.html">
+                        <p>Ichabod's Dockside</p> </a>
+                </div>
+            </div>
+            <div class="col-sm-12 footer"> 
+                
+            </div>
 
-        </div>
+            </div>
+        </main>
     </body>
 
-    <footer>
-        <p>This is a footer. 😁</p> 
+    <footer class="footer">
+        <span class="title">Contact Me!</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
     </footer>
 </html>
