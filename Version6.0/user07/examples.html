@@ -8,13 +8,34 @@
 
     <body>
         <!--USER INTERFACE-->
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        Adjective:
+                    </td>
+                    <td>
+                        <input type="text" id="adjOne">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter">Enter</button>
+        </div>
 
+        <div>
+            <p>
+                Have a <span id="wordOne" oneclick="madlob"></span> Halloween!
+            </p>
+        </div>
 
 
         <!--END USER INTERFACE-->
         <script>
-            alert("Happy Halloween");
-            window.location="http://www.google.com";
+            function madlib(){
+                const wordOne = document.getElementById("adjOne").value;
+                alert(wordOne);
+
+            }
         </script>
     </body>
 
