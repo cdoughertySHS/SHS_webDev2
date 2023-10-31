@@ -26,15 +26,16 @@
 
         <div>
             <p>
-                Have a <span id="wordOne"></span> Halloween
+                Have a <span id="blankOne"></span> Halloween
             </p>
         </div>
     
         <!-- END User Interface-->
         <script>
             function madlib(){
-                const wordOne = document.getElementById(adjOne).value
-                alert(wordOne);
+                const wordOne = document.getElementById("adjOne").value;
+                const firstspan = document.getElementById("blankOne");
+                blankOne.append(wordOne);
             }
         </script>
     </body>
