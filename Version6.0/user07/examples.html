@@ -19,12 +19,12 @@
                     </td>
                 </tr>
             </table>
-            <button id="Enter">Enter</button>
+            <button id="Enter" oneclick="madlib()">Enter</button>
         </div>
 
         <div>
             <p>
-                Have a <span id="wordOne" oneclick="madlob"></span> Halloween!
+                Have a <span id="blankOne"></span> Halloween!
             </p>
         </div>
 
@@ -33,8 +33,8 @@
         <script>
             function madlib(){
                 const wordOne = document.getElementById("adjOne").value;
-                alert(wordOne);
-
+                const firstSpan = document.getElementById("blankOne");
+                blankOne.append(wordOne);
             }
         </script>
     </body>
