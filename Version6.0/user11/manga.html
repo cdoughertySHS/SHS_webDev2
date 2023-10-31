@@ -4,17 +4,19 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/style.css">
         <style>
-            li{
-                margin: 10px;
-                background-color: aquamarine;
-                list-style: none;
+            img{
+                width: 250px;
+            }
+
+            body{
+                background-color: rgba(127, 255, 212, 0.393);
             }
         </style>
     </head>
     <body>
         <div class="menu">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a href="http://shakonet.isd720.com" class="navbar-brand">‎ ‎ About Me</a>
+                <a href="http://shakonet.isd720.com" class="navbar-brand">‎ ‎ My favorite Music</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" 
                         data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -23,19 +25,68 @@
                     <div class="navbar-nav">       
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="manga.html" class="nav-item nav-link active">Manga</a>
-                        <a href="music.html" class="nav-item nav-link active">Music</a>
+                        <a href="music.html" class="nav-item nav-link active" tabindex="-1">Music</a>
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="container">
-            <p>I am a student at shakopee High School. I am on the swim team. I take many accelerated classes. I am in the science and technology academy. I also have many other interests including:</p>
-            <ul>
-                <li><h3><a href="manga.html">Manga</a></h3></li>
-                <li><h3><a href="music.html">Music</a></h3></li>
-            </ul>
-            <p>Those things are what this website is about. Some of my favorite manga and bands will be listed on the other pages on this website. I'll also list where you can find them to check them out for yourself.</p>
-        </div>
+            <table>
+                <thead>
+                    
+                        <th>Number</th>
+                        <th>Manga</th>
+                        <th>Summary</th>
+                        <th>Art</th>
+                    
+                </thead>
+                 <tbody>
+                <tr>
+                   <td colspan="4">My favorite Manga is <i>One Piece</i>. It is a great story that has very little wrong with it. It has good depth, world-building, and action that make it just a very enjoyable experience to read.</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="mangaLink.html">One Piece</a></td>
+                    <td>The story follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates, where he explores the Grand Line in search of the mythical treasure known as the "One Piece" in order to become the next King of the Pirates.</td>
+                    <div class="container">  
+                        <div class="flipper">
+                            <div class="front">
+                                <td><img src=images/op.jpeg alt="A One Piece cover"></td>
+                            </div>
+                        </div>
+                    </div> 
+                </tr>
+                <tr>
+                    <td colspan="4">My second favorite manga is based in history and is a lot more emotional than One Piece. It is very deep and has a very strong message that is told throughout the story. It is called <i>Vinland Saga</i>.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="mangaLink.html">Vinland Saga</a></td>
+                    <td>The story is a dramatization of the story of Thorfinn Karlsefni and his expedition to find Vinland, with the majority of the story covering his fictional counterpart's transition from a bloodthirsty, revenge-filled teenager into a pacifistic young man; juxtaposed against this is the rise to power of King Canute, the journey of his own counterpart directly contrasting with that of Thorfinn's.</td>
+                    <div class="container">  
+                        <div class="flipper">
+                            <div class="front">
+                                <td><img src=images/vinland.jpeg alt="A Vinland Saga cover"></td>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <td colspan="4">Both of those manga are very popular though. If you want something that is more underground but still very good. It is the manga, <i>Toriko</i>.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="mangaLink.html">Toriko</a></td>
+                    <td>It follows the adventures of Toriko, a Gourmet Hunter, as he searches for rare, diverse foods to complete a full-course meal. On his journey, he is accompanied by a timid chef who wants to improve his skills.</td>
+                    <div class="container">   
+                        <div class="flipper">
+                            <div class="front">
+                                <td><img src=images/toriko.jpeg alt="A Toriko cover"></td>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                </tbody>
+            </table>
         <div class="footer">
             <footer class="text-center">
                 <div class="container p-4 pb-0">
@@ -108,6 +159,5 @@
                     <a class="text-black" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                 </div>
               </footer>
-        </div>
     </body>
 </html>
