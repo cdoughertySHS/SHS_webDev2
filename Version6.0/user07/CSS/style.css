@@ -39,3 +39,6 @@ a {
 a:hover {
     color: whitesmoke;
 }
+.container {
+    font-size: x-large;
+}
