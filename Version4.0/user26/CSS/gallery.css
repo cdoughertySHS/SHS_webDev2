@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 #gallery {
     font-family: "Orbitron", sans-serif;
@@ -14,7 +14,7 @@
 
 .flipper {
     position: relative;    
-    transition: 0.6s;
+    transition: 0.7s; 
     transform-style: preserve-3d;
 }
 
@@ -38,36 +38,37 @@
 
 img {
     width: 100%;
-}
+  }
 
-.container, .front, .back {
+  .container, .front, .back {
     width: 250px;
     height: 320px;
 }
 
 .container:hover .flipper {
     transform: rotateY(180deg);
-}
+  }
 
-a {
+  a {
     color: black;
-}
+  }
 
-.caption, .back h1 {
+  .caption, .back h1 {
     font-family: "Orbitron", sans-serif;
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding: 10px 10px 0 10px;
     margin: 0;
     text-align: center;
-}
-
-p.caption {
+   }
+   
+   p.caption {
     position: absolute;
     bottom: 1vh;
-  }
-  
-.description {
-    font-size: 0.9em;
+    }
+    
+   .description {
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.85em;
     padding: 0 20px 20px 20px;
     text-align: left;
-}
+   }
