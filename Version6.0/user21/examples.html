@@ -1,7 +1,7 @@
 <!DOCTYPE html>
+
 <html>
     <head>
-
 
 
     </head>
@@ -10,12 +10,14 @@
     <body>
         <!-- User Interface -->
 
+
         <div>
-            <table> 
+            <table>
                 <tr>
                     <td>
-                        adjective: 
+                        adjective:
                     </td>
+
 
                     <td>
                         <input type="text" id="adjOne">
@@ -23,26 +25,43 @@
                 </tr>
             </table>
             <button id="Enter" onclick="madlib()">Enter</button>
+        
         </div>
-    
+
+
         <div>
             <p>
-            Have a <span id="blankOne"></span> Halloween!
+                Have a <span id="blankOne"></span> Halloween!
             </p>
         </div>
 
 
-        <!-- END User Interface -->
+
+
+
+
+        <!-- END user Interface-->
+
+
 
 
         <script>
             
             function madlib(){
-                const wordOne = document.getElementByID("adJOne").value;
-                const firstSpan = document.getElementByID("blankOne");
+                const wordOne = document.getElementById("adjOne").value;
+                const firstSpan = document.getElementById("blankOne");
                 blankOne.append(wordOne);
             }
 
+
+
+
+
+
         </script>
     </body>
+
+
+
+
 </html>
