@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Higher or Lower</title>
+        
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <!-- BEGIN User Interface-->
+        <center><h1>Higher or Lower</h1></center>
+
+        <p>Guess a number from 1-100.</p>
+
+        <p>Guess:
+             <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button>
+        </p>
+
+        <p id="feedback"></p>
+
+        <p>Attempts: <span id="attempts">0</span></p>
+
+        <p>Previous Guesses: <span id="prev"></span></p>
+
+
+
+        <!-- END User Interface-->
+        <script>
+            function guessButton(){
+                const guess = document.getElementById("guess");
+
+                var num = guess.value;
+
+                alert(num);
+            }
+
+        </script>
+    </body>
+</html>
+

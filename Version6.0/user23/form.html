@@ -1,104 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 6.0
-    Name:
-    Date Completed:
--->
+    <!--Version 6.0
+        Name: AY
+        Date Completed: 10 . 28 . 23
+    -->
 
-<head>
-    <title>Sign Up Form</title>
+    <head>
+        <title>Sign Up Form</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <!-- Bootstrap meta data -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Log In Page">
+        <!-- Bootstrap meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Log In Page">
 
-    <!-- CSS -->
-   <!-- Bootstrap -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- Animate -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-   <!-- Custom -->
-   <link rel="stylesheet" href="CSS/style.css">
+        <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
 
-    <!------------------------ JavaScript -------------------------->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!------------------------ JavaScript -------------------------->
+        <!-- These are needed to get the responsive menu to work -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <!-- Custom styles for this template -->
-    <style>
-        .bs-example {
-            margin: 20px;
-        }
-    </style>
+        <!-- Custom styles for this template -->
+        <style>
+            .bs-example {
+                margin: 20px;
+            }
 
-</head>
+            .wideMargin {
+                margin: 15px;
+                background-color: #495867;
+                color: #f5f5f5;
+            }
 
-<body>    
-    <!-------------------------- Begin the nav-bar ---------------------->
-    <menu>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand"></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            body {
+                background-image: url('images/fallBkg.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: cover;
+            }
+            
+            h2{
+                color: #f5f5f5;
+            }
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="connect.html" class="nav-item nav-link active">Connect</a>
-                    <a href="form.html" class="nav-item nav-link active">Join Us!</a>
-                    <a href="confirmation.html" class="nav-item nav-link active">Welcome!</a>
-                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-                </div>
-                
-                <div class="navbar-nav ml-auto">
-                    <a href="confirmation.html" class="nav-item nav-link active">You're In!</a>
-                </div>
-            </div>
-        </nav>
-    </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
+            label{
+                color: #f5f5f5;
+            }
+        </style>
 
-    <br>
-    <h2>Join The Fam Today!</h2>
+    </head>
 
-    <div class="bs-example">
-        <form action="confirmation.html" method="post">
-            <div class="form-group row">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" id="inputEmail"
-                        value="example@example.com">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-10 offset-sm-2">
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Remember me</label>
+    <body>    
+        <!-------------------------- Begin the nav-bar ---------------------->
+        <menu>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="connect.html" class="nav-item nav-link active">Connect</a>
+                        <a href="form.html" class="nav-item nav-link active">Join Us!</a>
+                        <a href="confirmation.html" class="nav-item nav-link active">Welcome!</a>
+                        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                    </div>
+                    
+                    <div class="navbar-nav ml-auto">
+                        <a href="confirmation.html" class="nav-item nav-link active">You're In!</a>
                     </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-10 offset-sm-2">
-                    <a href="confirmation.html"><button type="submit" class="btn btn-primary">Sign in</button></a>
-                    
+            </nav>
+        </menu>
+        <!---------------------------------- End the nav-bar ------------------------------------->
+
+        <br>
+        <h2>Join The Fam Today!</h2>
+
+        <div class="bs-example">
+            <form action="confirmation.html" method="post">
+                <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com" required>
+                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
-</body>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <a href="confirmation.html"><button type="submit" class="btn btn-primary">Sign in</button></a>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="wideMargin">
+        <div>
+            <center>Got a Question? <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtMkNZcLqkjKTCXMVvHvjcRNVdMDbrpzJhMVjxBQgkrmkNnspJkklRXHbgBXgXbXckbXqcMq"!>Email Us!</a></center>
+            
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"> 
+            <center>Webpage made by <a href="https://www.google.com/search?client=safari&rls=en&q=averie+younge+shakopee+high+school&ie=UTF-8&oe=UTF-8" target="_blank">Averie Younge</a><center></center>
+        </div>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+    </body>
 
 </html>
