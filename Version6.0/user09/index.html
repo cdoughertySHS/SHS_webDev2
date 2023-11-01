@@ -4,6 +4,17 @@
         <link rel="icon" type="image/x-icon" href="images/Salmon Favicon.ico"/>
         <link rel="stylesheet" href="CSS/stylesam.css">  
         <title>Salmon Says</title>
+
+        <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 6.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
         <style>
             body {
                 background-color: salmon;
@@ -11,6 +22,7 @@
             h1 {
                 font-family: Papyrus, fantasy;
                 font-size: 330%;
+                padding-top: 2%;
             }
 
             a {
@@ -28,6 +40,7 @@
                 overflow: auto;
                 white-space: nowrap;
                 text-align: center; 
+                align-items: center;
             }
 
             .about{ 
@@ -46,7 +59,11 @@
             width: 32%;
             margin-bottom: .6em;
             display: inline-block;
+            resize:both
         }
+            .test{
+                min-height:fit-content;     
+            }
 
             .card:hover {
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -62,7 +79,7 @@
         }
 
             #places:hover{
-                background-color: white;
+                background-color: white; 
                 color: black; 
         }
 
@@ -102,7 +119,7 @@
                 <br>
             <div class="row about"> 
                 <h2>About:</h2>
-                <p>Here is a description of Salmon Says and who I am.</p>
+                <p>I'm Ewan Kahnke and this is Salmon Says. I got the idea to do this from my grandpa. It was August of 2023 and I was in Florida. Salmon has always been one of my favorite foods so after my third salmon meal in as many days, my grandpa suggested that I should start reviewing all the different salmon dishes I have. So I did. And here we are. My mom came up with the name after my grandpa introduced the idea and I immediately loved it. So sit back and enjoy seeing what Salmon Says.</p>
             </div>
             <br>
             <div class="row topthree"> 
@@ -119,7 +136,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/citrussalmonnotsl.jpeg"
+                <img class="test" src="images/citrussalmonnotsl.jpeg"
                     alt="Number 2" style="width:100%;"> 
                 <div class="nameplate">
                     <h4><b>2nd Place</b></h4>
@@ -149,13 +166,8 @@
         <table id="footerTable">
             <tr>
                 <td>
-                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                </td>
-                <td>
-                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                </td>
-                <td>
                     <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
                 </td>
             </tr>
         </table>
