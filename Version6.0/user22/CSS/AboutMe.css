@@ -1,8 +1,4 @@
-
-
-
-
-#gallery {
+#AboutMe {
     font-family: "Orbitron", sans-serif;
     line-height: 1.5em;
     text-align: center;
@@ -43,6 +39,9 @@ img {
  .container:hover .flipper {
     transform: rotateY(180deg);
   }
+  .container:hover .flipper {
+    transform: rotateY(180deg);
+  }
   a {
     color: cyan;
   }
@@ -63,3 +62,6 @@ img {
     padding: 0 20px 20px 20px;
     text-align: left;
   }
+  body {
+    background-color: #DBF9FC;
+}

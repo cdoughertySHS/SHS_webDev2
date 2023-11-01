@@ -1,0 +1,72 @@
+<html>
+<head>
+
+</head>
+<body>
+  
+
+    <div>
+        <table>
+            <p>
+                Have a <span id="blankOne"></span> Halloween! You good <span id="blankTwo"></span>Now go to  <span id="blankThree"></span>!
+            </p>
+            <td>
+               Blank 1 adjective:
+            </td>
+            <td>
+                <input type="text" id="adjOne">
+            </td>
+        </table>
+        <button id="Enter" onclick="madlib()">Enter</button>
+    </div>
+
+    <div>
+    </div>
+    <script>
+        function madlib(){
+            const wordOne = document.getElementById("adjOne").value;
+            const firstspan = document.getElementById("blankOne");
+            blankOne.append(wordOne);
+        }
+    </script>
+      <div>
+        <table>
+            <td>
+                Blank 2 Person place thing:
+            </td>
+            <td>
+                <input type="text" id="PPTtwo">
+            </td>
+        </table>
+        <button id="Enter" onclick="madlib2()">Enter</button>
+    </div>
+    <script>
+        function madlib2(){
+            const wordTwo = document.getElementById("PPTtwo").value;
+            const Secondspan = document.getElementById("blankTwo");
+            blankTwo.append(wordTwo);
+        }
+    </script>
+     <div>
+        <table>
+            <td>
+                Blank 3 place:
+            </td>
+            <td>
+                <input type="text" id="Vthree">
+            </td>
+        </table>
+        <button id="Enter" onclick="madlib3()">Enter</button>
+    </div>
+    <script>
+        function madlib3(){
+            const wordThree = document.getElementById("Vtree").value;
+            const Thirdspan = document.getElementById("blankThree");
+            blankThree.append(wordThree);
+        }
+    </script>
+</body>
+
+
+
+</html>
