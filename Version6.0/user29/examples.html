@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+
+
+
+    </head>
+
+
+
+
+
+
+    <body>
+        <!--------user interface-->
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        adjective:
+                    </td>
+
+                    <td>
+                        <input type="text" id="adjOne">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter" onclick="madlib()">Enter</button>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        adjective 2:
+                    </td>
+
+                    <td>
+                        <input type="text" id="adjTwo">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter" onclick="madlib2()">Enter</button>
+        </div>
+       
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        adjective 3:
+                    </td>
+
+                    <td>
+                        <input type="text" id="adjThree">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter" onclick="madlib3()">Enter</button>
+        </div>
+
+        <div>
+            <p>
+                have a <span id="blankOne"></span> Halloween! stay way from <span id="blankTwo"></span>. he only comes out on the <span id="blankThree"></span> of october.
+            </p>
+        </div>
+
+       
+
+        
+
+       
+
+        <!---------end user interface -->
+       
+       
+       <script>
+           
+           function madlib(){
+                const wordOne = document.getElementById("adjOne").value;
+                const firstspan = document.getElementById("blankOne");
+                blankOne.append(wordOne);
+
+           }
+
+           function madlib2(){
+                const wordTwo= document.getElementById("adjTwo").value;
+                const secondspan = document.getElementById("blankTwo");
+                blankTwo.append(wordTwo);
+
+           }
+
+           function madlib3(){
+                const wordThree= document.getElementById("adjThree").value;
+                const thirdspan = document.getElementById("blankThree");
+                blankThree.append(wordThree);
+
+           }
+
+           
+
+
+
+        </script>
+    </body>
+
+
+
+
+
+
+
+</html>
