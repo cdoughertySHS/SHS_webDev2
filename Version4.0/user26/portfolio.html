@@ -46,29 +46,53 @@
             width: 100%;
         }
 
-        #knowledge > * {
-            border: 3px red solid; 
+        #knowledge>* {
+            border: 3px red solid;
         }
 
-        p + * {
+        p+* {
             background-color: #FFFF00;
         }
-        div > li::marker{
+
+        div>li::marker {
             color: red;
-            content:"😜";
+            content: "😜";
         }
 
         td:hover {
-             background-color: black;
+            background-color: black;
         }
+
         h3:only-of-type {
             color: aqua;
         }
-        h1:first-of-type{
-            font-style: italic; 
+
+        h1:first-of-type {
+            font-style: italic;
         }
+
         ul:first-child {
-            font-weight: 800; 
+            font-weight: 800;
+        }
+
+        /* unvisited link */
+        a:link {
+            color: red;
+        }
+
+        /* visited link */
+        a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
         }
     </style>
 </head>
@@ -81,7 +105,7 @@
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
@@ -127,6 +151,8 @@
         <p>
             I will use my knowledge to create an amazing website for you and your needs.
         </p>
+
+        <p><b><a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">This is an astonishing link</a></b></p>
         <div>
             <table id="rainbow">
                 <tr>
