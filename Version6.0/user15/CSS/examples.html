@@ -1,17 +1,12 @@
 <!DOCTYPE html>
-
-
 <html>
     <head>
-
 
     </head>
 
 
     <body>
         <!-- User Interface -->
-
-
         <div>
             <table>
                 <tr>
@@ -23,7 +18,8 @@
                     <td>
                         <input type="text" id="adjOne">
                     </td>
-
+                </tr>
+                <tr>
                     <td>
                         adjective:
                     </td>
@@ -32,8 +28,17 @@
                         <input type="text" id="adjTwo">
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        adjective:
+                    </td>
+
+                    <td>
+                        <input type="text" id="adjThree">
+                    </td>
+                </tr>
             </table>
-            <button id="Enter" onclick="madlib()">Enter</button>
+            <button id="Enter" onclick="madlib1(),madlib2(),madlib3()">Enter</button>
         
         </div>
 
@@ -41,38 +46,32 @@
         <div>
             <p>
                 Have a <span id="blankOne"></span> Halloween!
+                <br>
+                My favorite candy is <span id="blankTwo"></span>.
+                <br>
+                Have a <span id="blankThree"></span> Thanksgiving!
             </p>
         </div>
-
-
-
-
-
-
         <!-- END user Interface-->
 
-
-
-
         <script>
-            
-            function madlib(){
+            function madlib1(){
                 const wordOne = document.getElementById("adjOne").value;
                 const firstSpan = document.getElementById("blankOne");
                 blankOne.append(wordOne);
             }
 
+            function madlib2(){
+                const wordTwo = document.getElementById("adjTwo").value;
+                const secondSpan = document.getElementById("blankTwo");
+                blankTwo.append(wordTwo);
+            }
 
-
-
-
-
+            function madlib3(){
+                const wordThree = document.getElementById("adjThree").value;
+                const thirdSpan = document.getElementById("blankThree");
+                blankThree.append(wordThree);
+            }
         </script>
     </body>
-
-
-
-
 </html>
-
-
