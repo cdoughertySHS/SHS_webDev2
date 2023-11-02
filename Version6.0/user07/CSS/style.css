@@ -42,3 +42,7 @@ a:hover {
 .container {
     font-size: x-large;
 }
+h1 {
+    margin: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

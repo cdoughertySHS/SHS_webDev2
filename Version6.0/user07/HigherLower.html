@@ -27,12 +27,23 @@
         <p>Previous Guesses: <span id="prev"></span></p>
 
         <script>
-            const ans = Math.random()
+            const ans = Math.floor(Math.random()*100+1);
+
+            alert(ans);
+            
             function guessButton(){
                 const guess = document.getElementById("guess");
                 var num = guess.value;
 
-                alert(ans);
+                if (ans==num) {
+                    alert ("Correct");
+                }
+                if (ans>num) {
+                    alert ("Higher");
+                }
+                if (ans<num) {
+                    alert ("Lower");
+                }
             }
         </script>
     </body>
