@@ -28,10 +28,16 @@
 
         <!-- END User Interface-->
         <script>
+            const ans = Math.floor(Math.random()*100+1);
+            
+            
             function guessButton(){
                 const guess = document.getElementById("guess");
-
                 var num = guess.value;
+
+                if (ans==num){
+                    alert("correct");
+                }
 
                 alert(num);
             }
