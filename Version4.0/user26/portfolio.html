@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 4.0
-        Name:
-        Date Completed:
+        Name: Ewan Kahnke
+        Date Completed: 10/09/23
     -->
 
 <head>
@@ -47,46 +47,28 @@
         }
 
         #knowledge > * {
-            border: 3px red solid;
+            border: 3px red solid; 
         }
 
         p + * {
             background-color: #FFFF00;
         }
-
-        div ul >::marker{
+        div > li::marker{
             color: red;
-        }
-
-        div ul >::marker{
-            content:"😜 ";
+            content:"😜";
         }
 
         td:hover {
-            background-color: black;
+             background-color: black;
         }
-
-        a:link {
-            color: #FF0000;
+        h3:only-of-type {
+            color: aqua;
         }
-        
-        a:visited {
-            color: #00FF00;
+        h1:first-of-type{
+            font-style: italic; 
         }
-        a:hover {
-            color: #FF00FF;
-        }
-        
-        a:active {
-            color: #0000FF;
-        }
-
-        p:first-child {
-            color: blue;
-        }
-
-        input:focus {
-            background-color: yellow;
+        ul:first-child {
+            font-weight: 800; 
         }
     </style>
 </head>
@@ -99,8 +81,7 @@
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+<div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
@@ -188,3 +169,5 @@
     </footer>
     <!---------------------------------- End the footer ------------->
 </body>
+
+</html>
