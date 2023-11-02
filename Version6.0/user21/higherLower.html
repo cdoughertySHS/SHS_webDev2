@@ -20,15 +20,23 @@
 
       <p>Attempts: <span id="attempts">0</span></p>
 
-      <p>Previous Guessues: <span id="previous"></span></p>
+      <p>Previous Guesses: <span id="previous"></span></p>
 
 
 
 
         <script>
-            function guessButton(){
-                alert("Button Works");
+            const ans = Math.floor(Math.random()*100+1);
 
+
+
+
+            function guessButton(){
+                const guess = document.getElementById("guess");
+
+                var num = guess.value;
+
+                alert(ans);
             }
 
 
