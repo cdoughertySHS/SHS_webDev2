@@ -23,13 +23,27 @@
         <script>
             const ans = Math.floor(Math.random()*100+1);
 
+            alert(ans);
 
             function guessButton(){
                 const guess = document.getElementById("guess");
-
+                const feedback = document.getElementById("feedback");
+                
                 var num = guess.value;
 
-                alert(ans);
+                if(ans==num){
+                    feedback.append("Correct!");
+                }
+
+                if(ans>num){
+                    feedback.append("Higher");
+                }
+
+                if(ans<num){
+                    feedback.append("Lower");
+                }
+
+                
             }
 
         </script>
