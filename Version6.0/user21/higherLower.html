@@ -16,7 +16,7 @@
         <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button> 
       </p>
 
-      <p id="feedback">Sample</p>
+      <p id="feedback">Feedback: </p>
 
       <p>Attempts: <span id="attempts">0</span></p>
 
@@ -33,11 +33,12 @@
 
             function guessButton(){
                 const guess = document.getElementById("guess");
+                const feedback = document.getElementById("feedback");
 
                 var num = guess.value;
 
                 if (ans==num){
-                    alert("correct");
+                    feedback.append("Correct");
                 }
 
                 if (ans>num){
