@@ -32,15 +32,23 @@
                 var num = guess.value;
 
                 if(ans==num){
+                    feedback.innerText = "";
                     feedback.append("Correct!");
+                    prev.append(num);
                 }
 
                 if(ans>num){
+                    feedback.innerText = "";
                     feedback.append("Higher");
+                    prev.append(num);
+                    prev.append(", ");
                 }
 
                 if(ans<num){
+                    feedback.innerText = "";
                     feedback.append("Lower");
+                    prev.append(num);
+                    prev.append(", ");
                 }
 
                 
