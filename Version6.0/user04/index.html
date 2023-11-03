@@ -17,19 +17,21 @@ html {
 }
 
 .column { 
-  float: center;
-  width: 80.3%;
+  float: left;
+  width: 50%;
   margin-bottom: 16px;
-  padding: 0px;
+  padding: px;
+  height: 20px
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  
 }
 
 .about-section {
-  padding: 50px;
+  padding: 60px;
   text-align: center;
   background-color: #0e0d0d;
   color: white;
@@ -46,7 +48,7 @@ html {
 }
 
 .title {
-  color: rgb(141, 137, 137);
+  color: rgb(251, 246, 246);
 }
 
 .button {
@@ -54,18 +56,18 @@ html {
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #3c0df7;
+  color: rgb(11, 173, 237);
+  background-color: #f9f5f5;
   text-align: center;
   cursor: pointer;
   width: 100%;
 }
 
 .button:hover {
-  background-color: #f00e0e;
+  background-color: #eb0f0f;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width:650px) {
   .column {
     width: 100%;
     display: block;
@@ -88,22 +90,24 @@ html {
       <img src="images/food.jpeg" style="width:100%">
       <div class="container">
         <h2>Foods</h2>
-        <p>These are some of the foods I like</p>
-        <p><button class="button">Click</button></p>
+        <p>These are some of the foods I like to eat
+        </p>
+        <p><button class="button"><a href="food.html">Click</a></button></p>
       </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img src="images/download.jpeg" style="width:100%">
+      <img src="images/netflix.jpeg" style="width:100%">
       <div class="container">
         <h2>Shows/Movies</h2>
-        <p>These are some movies and TV shows I like to watch</p>
-        <p><button class="button">Click</button></p>
+        <p>Movies and TV shows I like to watch</p>
+        <p><button class="button"><a href="movies.html">Click</a></button></p>
       </div>
     </div>
   </div>
+
   
  </body>
 </html>

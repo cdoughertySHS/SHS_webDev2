@@ -1,0 +1,111 @@
+
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #0aeb0a;
+}
+
+td{
+	padding:20px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}
+
+.title{
+	color: rgb(246, 17, 17);
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+.class{
+	border: 10px solid #e51f1f;
+	color: rgb(6, 245, 165);
+	background-color: rgb(235, 138, 11);
+}
+
+
+#knowledge > * {
+	border: 3px red solid;
+   }
+
+   p + * {
+	background-color: #910df64a;
+   }
+   
+
+div li::marker{
+	color: red;
+   }
+   
+   #rainbow td:hover {
+	background-color: black;
+   }
+   
+   p {
+	display: none;
+	background-color: yellow;
+	padding: 20px;
+  }
+  
+  div:hover p {
+	display: block;
+  }
+
+  div:hover {
+	background-color: rgb(50, 88, 87);
+  }
+   
+  
+ul li:first-child{
+	color: #e51f1f;
+}
+
+ol li:first-child{
+	color:rgb(246, 17, 17)
+}
+
+div :hover ul li:first-child{
+	color: #e51fd1;
+}
+
+div :hover ol li:first-child{
+	color: rgb(17, 67, 246)
+}
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: rgba(0, 0, 0, 0.05);
+  }
+  
