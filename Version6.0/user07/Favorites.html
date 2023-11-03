@@ -6,25 +6,168 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="CSS/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
             
         <style type="text/css">
             a >.fa {
                 font-size: xxx-large;
             }
+            .cardContainer{
+                display: inline-block;
+                margin: 3%;
+                perspective: 800px;
+            }
+            .flipper {
+                position: relative;    
+                transition: 2.5s;
+                transform-style: preserve-3d;
+            }
+            .front, .back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 320px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                backface-visibility: hidden;
+            }
+            .front{
+                z-index:2;
+            }
+            .back{
+                transform:rotateY(180deg);
+            }
+            img {
+                width: 100%;
+            }
+            .cardContainer, .front, .back {
+                width: 250px;
+                height: 320px;
+            }
+            .cardContainer:hover .flipper {
+                transform: rotateY(180deg);
+            }
+            .caption, .back h1 {
+                font-size: 1.7em;
+                padding: 10px 10px 0 10px;
+                margin: 0;
+                text-align: center;
+                color: black;
+            }
+            p.caption {
+                position: absolute;
+
+            }
+            
+            .description {
+                font-size: 0.9em;
+                padding: 0 20px 20px 20px;
+                text-align: left;
+            }
         </style>
     </head>
     <body>
         
-            <div id="menu">
-                <div class="col-sm-12">
-                    <nav class="nav nav-pills">
-                        <a class="nav-link home" aria-current="page" href="index.html"><b><i class="fa fa-transgender-alt" aria-hidden="true"></i></b></a>
-                        <a class="nav-link hover" href="AboutMe.html">About Me</a>
-                        <a class="nav-link hover" href="ArtGallery.html">My Art</a>
-                        <a class="nav-link here" href="Favorites.html">Favorites</a>
-                    </nav>
+        <div id="menu">
+            <div class="col-sm-12">
+                <nav class="nav nav-pills">
+                    <a class="nav-link home" aria-current="page" href="index.html"><b><i class="fa fa-transgender-alt" aria-hidden="true"></i></b></a>
+                    <a class="nav-link hover" href="AboutMe.html">About Me</a>
+                    <a class="nav-link hover" href="ArtGallery.html">My Art</a>
+                    <a class="nav-link here" href="Favorites.html">Favorites</a>
+                </nav>
+            </div>
+        </div>
+        <main id="wideMargin">
+            <div id="gallery">
+                <h3>Games</h3>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Subnautica.jpeg">
+                            <p class="caption">Subnautica</p>
+                        </div>
+                        <div class="back">
+                            <h1>Summary:</h1>
+                            <p class="description">Subnautica is an underwater open-world survival game. You play as a crew member on the Aroura, which ends up crash-landing on an alien planet. Collect resources to survive and venture deeper do discover the secrets of this planet. <br> My review: Very good, will give you thalassaphobia. 9.5/10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Minecraft.jpeg">
+                            <p class="caption">Minecraft</p>
+                        </div>
+                        <div class="back">
+                            <h1>Summary:</h1>
+                            <p class="description">Minecraft is an open-world 3d survival game with practically no limits. Every world is randomly generated and everything is cubic. There are no rules or limits other than your imagination. <br> My review: One of my top favorite games of all time. It brings me so many good memories. 9.9/10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/OneShot.jpeg"> 
+                            <p class="caption">OneShot</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+                            <h1>Summary:</h1>
+                            </a>
+                            <p class="description"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Ghostrunner.jpeg">
+                            <p class="caption">Ghostrunner</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+                            <h1>GPU</h1>
+                            </a>
+                            <p class="description">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="">
+                            <p class="caption">VRChat</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+                            <h1>GPU</h1>
+                            </a>
+                            <p class="description">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.</p>
+                        </div>
+                    </div>
+                </div><div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="">
+                            <p class="caption"></p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+                            <h1>GPU</h1>
+                            </a>
+                            <p class="description">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </main>
+            <h3>Animated Shows</h3>
+        </p>
         <p>    
             <h3>Musical Artists</h3>
         </p>
