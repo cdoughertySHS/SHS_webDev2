@@ -31,15 +31,34 @@
             <script>
                 const ans = Math.floor(Math.random()*100+1);
 
-
                 function guessButton(){
                     const guess = document.getElementById("guess");
+                    const feedback = document.getElementById("feedback");
+                    const prev = document.getElementById("prev");
+
                     var num = guess.value;
 
-                    alert(ans);
+                    if (ans==num){
+                        feedback.innerText = "";
+                        feedback.append("Correct!");
+                        prev.append(num);
+                        prev.append(", ");
+                    }
+
+                    if (ans>num){
+                        feedback.innerText = "";
+                        feedback.append("Higher!");
+                        prev.append(num);
+                        prev.append(", ");
+                    }
+
+                    if (ans<num){
+                        feedback.innerText = "";
+                        feedback.append("Lower!");
+                        prev.append(num);
+                        prev.append(", ");
+                    }
                 }
-
-
 
             </script>
         </body>
