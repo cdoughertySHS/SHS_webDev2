@@ -28,16 +28,32 @@
   <p>Pervious Guesses: <span id="prev"></span></p>
   
   
-     <script>w
-        const ans = Math.floor(Math.random)()*100+1
+     <script>
+        const ans = Math.floor(Math.random()*100+1);
 
 
         function guessButton(){
             const guess = document.getElementById("guess");
+            const feedback = document.getElementById("feedback");
+            
             
             var num = guess.value;
             
-            alert(ans);
+            if(ans==num){
+                feedback.append("Correct")
+            }
+
+            if(ans>num){
+                alert("Higher");
+            }
+
+            if(ans<num){
+                alert("Lower");
+            }
+
+
+
+            
         }
 
 
