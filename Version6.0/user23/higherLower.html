@@ -30,16 +30,28 @@
         <script>
             const ans = Math.floor(Math.random()*100+1);
             
+            alert(ans);
             
             function guessButton(){
                 const guess = document.getElementById("guess");
+                const feedback = document.getElementById("feedback");
+                const  prev = document.getElementById("prev");
+                
                 var num = guess.value;
 
                 if (ans==num){
-                    alert("correct");
+                    feedback.append("Correct ");
                 }
 
-                alert(num);
+                if (ans>num){
+                    alert("Higher")
+                }
+
+                if (ans<num){
+                    alert("Lower");
+                }
+
+                
             }
 
         </script>
