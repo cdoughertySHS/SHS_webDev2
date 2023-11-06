@@ -4,6 +4,15 @@
         <head>
 
             <style>
+                .red{
+                    color: red;
+                }
+
+                .green{
+                    color: green;
+                    font-size: larger;
+                }
+
 
             </style>
         
@@ -19,11 +28,13 @@
                 Guess: <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button>
             </p>
 
-            <p id="feedback"></p>
+            <p id="feedback" class="red"></p>
 
             <p>Attempts: <span id="attempts">0</span></p>
 
             <p>Previous Guesses: <span id="prev"></span></p>
+
+            <button id="reset" onclick="resetButton()">Reset</button>
 
 
 
@@ -35,12 +46,16 @@
                     const guess = document.getElementById("guess");
                     const feedback = document.getElementById("feedback");
                     const prev = document.getElementById("prev");
+                    const attempts = document.getElementById("attempts");
+                    const reset = document.getElementById("reset");
 
                     var num = guess.value;
+                    var count = 0;
 
                     if (ans==num){
                         feedback.innerText = "";
                         feedback.append("Correct!");
+                        feedback.className = "green";
                         prev.append(num);
                         prev.append(", ");
                     }
@@ -58,6 +73,20 @@
                         prev.append(num);
                         prev.append(", ");
                     }
+
+                    count++;
+                    attempts.innerText = count;
+                }
+
+                function resetButton(){
+
+                    ans = Math.floor(Math.random()*100+1);
+                    prev.innerText = "";
+                    feedback.innerText = "";
+                    feedback.className = "red";
+                    attempts.innerText = count;
+                    enter.className = "";
+                    resetButton.className = "hidden";
                 }
 
             </script>
