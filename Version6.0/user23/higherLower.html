@@ -4,7 +4,14 @@
         <title>Higher or Lower</title>
         
         <style>
+            .red{
+                color: red;
+            }
 
+            .green{
+                color: green;
+                font-size: larger;
+            }
         </style>
     </head>
 
@@ -18,7 +25,7 @@
              <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button>
         </p>
 
-        <p id="feedback"></p>
+        <p id="feedback" class="red"></p>
 
         <p>Attempts: <span id="attempts">0</span></p>
 
@@ -29,19 +36,23 @@
         <!-- END User Interface-->
         <script>
             const ans = Math.floor(Math.random()*100+1);
+            var count = 0;
             
             alert(ans);
             
             function guessButton(){
                 const guess = document.getElementById("guess");
                 const feedback = document.getElementById("feedback");
-                
+                const attempts = document.getElementById("attempts");
+                const prev = document.getElementById("prev");
+
                 var num = guess.value;
 
-                feedback.innertext = "";
+                feedback.innerText = "";
                 
                 if (ans==num){
                     feedback.append("Correct ");
+                    feedback.className = "green";
                 }
 
                 if (ans>num){
@@ -52,6 +63,10 @@
                     feedback.append("Lower");
                 }
 
+                count++;
+                attempts.innerText = count;
+
+                <input type="text" class="prev" placeholder="Previous Guesses" name="previousguesses"></input>
                 
             }
 
