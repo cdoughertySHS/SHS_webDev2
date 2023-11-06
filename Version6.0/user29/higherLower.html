@@ -39,16 +39,18 @@
             
             var num = guess.value;
             
+            feedback.innerText = "";
+
             if(ans==num){
-                feedback.append("Correct")
+                feedback.append("Correct");
             }
 
             if(ans>num){
-                alert("Higher");
+                feedback.append("Higher");
             }
 
             if(ans<num){
-                alert("Lower");
+                feedback.append("Lower");
             }
 
 
