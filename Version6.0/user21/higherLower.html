@@ -2,8 +2,13 @@
 
 <html>
     <head>
+        <style>
+            body{
+                background-color: rgb(137, 197, 137);
+            }
 
 
+        </style>   
     </head>
 
 
@@ -16,7 +21,7 @@
         <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button> 
       </p>
 
-      <p id="feedback">Feedback: </p>
+      <h3 id="feedback">Feedback: </h3>
 
       <p>Attempts: <span id="attempts">0</span></p>
 
@@ -27,6 +32,8 @@
 
         <script>
             const ans = Math.floor(Math.random()*100+1);
+            var count = 0;
+            
             alert(ans);
 
 
@@ -34,23 +41,29 @@
             function guessButton(){
                 const guess = document.getElementById("guess");
                 const feedback = document.getElementById("feedback");
+                const attempts = document.getElementById("attempts");
+
 
                 var num = guess.value;
+            
+
+                feedback.innerText = "";
 
                 if (ans==num){
-                    feedback.append("Correct");
+                    feedback.append("CORRECT");
                 }
 
                 if (ans>num){
-                    alert("higher");
+                    feedback.append("HIGHER");
                 }
 
                 if (ans<num){
-                    alert("lower");
+                    feedback.append("LOWER");
                 }
-
-                
             }
+
+            count++;
+            attempts.innerText = count;
 
 
 
