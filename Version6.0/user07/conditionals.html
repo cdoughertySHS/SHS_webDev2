@@ -1,0 +1,56 @@
+<html>
+    <head>
+
+    </head>
+        
+
+
+    <body>
+        <h1>Conditonals</h1>
+        
+        <p>
+            <input id="myText" type="text">
+
+            <button id="Enter" onclick=mystery()>Enter</button>
+        </p>
+
+
+
+        <script>
+            const textEntry = document.getElementById("myText");
+
+            const button = document.getElementById("Enter")
+
+            function mystery()
+            {
+                var text = textEntry.value;
+                
+                var myst = text.length%2;
+
+                if (myst == 0){
+                    alert("Hello")
+                }
+                else{
+                    alert("Good Bye");
+                }
+                
+                var myst2 = text.length%4;
+
+                if (myst2==0){
+                    alert("And stuff");
+                }
+                else{
+                    alert("or things");
+                }
+
+                alert("Done");
+
+            }
+
+
+        </script>
+    </body>
+
+
+
+</html>
