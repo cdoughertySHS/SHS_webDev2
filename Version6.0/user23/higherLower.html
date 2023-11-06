@@ -35,20 +35,21 @@
             function guessButton(){
                 const guess = document.getElementById("guess");
                 const feedback = document.getElementById("feedback");
-                const  prev = document.getElementById("prev");
                 
                 var num = guess.value;
 
+                feedback.innertext = "";
+                
                 if (ans==num){
                     feedback.append("Correct ");
                 }
 
                 if (ans>num){
-                    alert("Higher")
+                    feedback.append("Higher")
                 }
 
                 if (ans<num){
-                    alert("Lower");
+                    feedback.append("Lower");
                 }
 
                 
