@@ -3,7 +3,14 @@
     <head>
 
         <style>
-
+            .red {
+                color: red;
+            }
+            
+            .green {
+                color: green;
+                font-size:larger;
+            }
         </style>
     </head>
     <body>
@@ -20,30 +27,48 @@
         <hr>
         <center><h2>Results</h2></center>
 
-        <p id="feedback"> 
-
-        </p>
+        <p id="feedback" class="red"></p>
         <p> Attempts: <span id="attempts">0</span></p>
         <p>Previous Guesses: <span id="prev"></span></p>
 
         <script>
             const ans = Math.floor(Math.random()*100+1);
-
+            var count = 0;
             alert(ans);
             
             function guessButton(){
                 const guess = document.getElementById("guess");
-                var num = guess.value;
+                const feedback = document.getElementById("feedback");
+                const attempts = document.getElementById("attempts");
 
+                var num = guess.value;
+                
+                guess.append("prev");
+
+                feedback.innerText = "";
+                
+                
+                
                 if (ans==num) {
-                    alert ("Correct");
+                    feedback.append("Correct");
+                    feedback.className = "green";
                 }
                 if (ans>num) {
-                    alert ("Higher");
+                    feedback.append("Higher");
                 }
                 if (ans<num) {
-                    alert ("Lower");
+                    feedback.append("Lower");
                 }
+
+                
+                count++;
+                attempts.innerText = count;
+
+                prev.append(num + " ");
+            }
+
+            function reset(){
+                
             }
         </script>
     </body>
