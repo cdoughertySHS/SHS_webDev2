@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html>
     <head>
         <style>
@@ -6,40 +8,72 @@
                 position: relative;
             }
 
+
             #fullCover{
                 position: absolute;
-                top: 198px;
-                left: 70px;
-                height: 270px;
-                width: 200px;
-                background-color:white;
+                top: 327px;
+                left: 150px;
+                height:472px;
+                width: 237px;
+                background-color:rgba(250, 3, 3, 0);
             }
+
+
+            #headPortion{
+                position: absolute;
+                top: 410px;
+                left: 150px;
+                height:350px;
+                width: 237px;
+                background-color: blue;
+            }
+
 
             .uncover{
                 display: none;
             }
 
+
+
+
         </style>
     </head>
 
 
-    
+
+
     <body>
         <div id="container">
             <div id="image">
                 <img src="Images/hangman.jpeg">
             </div>
+
+
             <div id="fullCover"></div>
+
 
             <div id="headPortion"></div>
 
+
+
+
+            
+
+
+
+
         </div>
 
+
         <button id="reveal" onclick="reveal()">Reveal</button>
-        
+
+
         <script>
             var click = 0;
             const fullCover = document.getElementById("fullCover");
+            const headPortion = document.getElementById("headPortion");
+
+
 
 
             function reveal(){
@@ -50,8 +84,20 @@
                 {
                     fullCover.className = "uncover";
                 }
+                if (click == 2)
+                {
+                    headPortion.className = "uncovered";
+                }
             }
-            
+
+
+
+
+
+
         </script>
     </body>
 </html>
+
+
+
