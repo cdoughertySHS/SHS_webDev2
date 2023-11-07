@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #container{
+                position: relative;
+            }
+
+            #fullCover{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 576px;
+                width: 576px;
+                background-color: yellow;
+            }
+
+            #headPortion{
+                position: absolute;
+                top: 255px;
+                left: 0px;
+                height: 321px;
+                width: 576px;
+                background-color: rgb(40, 149, 89);
+
+            }
+            .uncover{
+                display: none;
+            }
+
+        </style>
+    </head>
+
+
+
+    <body>
+        <div id="container">
+            <div id="image">
+                <img src="hangman.jpg">
+            </div>
+            <div id="fullCover"></div>
+
+            <div id="headPortion"></div>
+
+        </div>
+
+    <button id="reveal" onclick="reveal()">Reveal</button>
+
+
+        <script>
+            var click=0;
+            const fullcover = doucumnet.getElementById("fullCover")
+            const headPortion = document.getElementById("headPortion")
+
+
+
+
+            function reveal(){
+                click++;
+
+                if(click == 1)
+                {
+                    fullCover.className = "uncover"
+                }
+                if(click== 2)
+                {
+                    headPortion.className = "uncover"
+                }
+            }
+        </script>
+    </body>
+</html>
