@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #container{
+                position:relative;
+            }
+
+            #fullCover{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 559px;
+                width: 302px;
+
+
+                background-color: white;
+
+            }
+
+            .uncover{
+                display: none;
+
+            }
+
+        </style>
+    </head>
+
+
+
+    <body>
+        <div id= "container">
+            <div id="image>">
+                <img src="images/StickGuy.png">
+
+            </div>
+            <div id="fullCover"></div>
+
+            <button id="reveal" onclick="reveal()">Reveal</button>
+
+
+
+
+        </div>
+
+        <script>
+            var click = 0;
+            const fullCover = Document.getElementById("fullCover");
+
+            function reveal(){
+                click++;
+
+                if (click== 1)
+                {
+                    fullCover.className = "uncover";
+                }
+
+            }
+
+
+        </script>
+    </body>
+</html>
