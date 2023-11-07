@@ -1,4 +1,4 @@
-<html>
+<input type="reset"><html>
     <head>
 
 
@@ -66,31 +66,84 @@
 
         </script>
        <script src="javascript.js"></script>
+       
 
-       <script>
-        alert("Hello World!");
       </script>
 
-
     </body>
-
+   
+   
     <html>
+        Value $<span id="Value">0</span> 
+        <button id="add">Add Value</button> 
+        <button id="reset">Reset</button>
+
+        
+
         <body>
+           
            <div id="dip"> Click the below buttons to hide or show this text. 
            </div><br>
            <button onclick="hide()"> Hide Element </button>
            <button onclick="show()"> Show Element </button>
-           <script>
+           <script> 
+      
+            var a = 0;
+            var add = function(valueToAdd) {
+            a += valueToAdd;
+            document.getElementById('Value').innerHTML = a;
+             }
+
+            var reset = function() {
+             a = 0;
+             document.getElementById('Value').innerHTML = 0;
+              }
+              var addButton = document.querySelector("#add");
+              var resetButton = document.querySelector("#reset");
+
+              addButton.addEventListener("click", function() {
+             add(1);
+              })
+
+            resetButton.addEventListener("click", function() {
+            reset();
+             })
+
+        
+
+
+
+
+
               function hide() {
                  document.getElementById('dip').hidden = true
               }
               function show() {
                  document.getElementById('dip').hidden = false
               }
-           </script>
-           <input type="reset">
-        </body>
-        </html>
+              if (myGuess === randomNumber){
+              feedback.textContent = "You got it right!"
+              }
+              else if(myGuess > randomNumber) {
+              feedback.textContent = "Your guess was " + myGuess + ". That's too high. Try Again!"
+              }
+              else if(myGuess < randomNumber) {
+              feedback.textContent = "Your guess was " + myGuess + ". That's too low. Try Again!"
+              }       
+              submitGuess.addEventListener('click', checkGuess)
+  
+              
+             
+            </script>
+            
+            
 
+           <input type="reset">
+           </body>
+           
+
+           </html>
+           
 
 </html>
+
