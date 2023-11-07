@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                position: relative;
+            }
+
+            #fullCover{
+                position: absolute;
+                top: 198px;
+                left: 70px;
+                height: 270px;
+                width: 200px;
+                background-color:white;
+            }
+
+            .uncover{
+                display: none;
+            }
+
+        </style>
+    </head>
+
+
+    
+    <body>
+        <div id="container">
+            <div id="image">
+                <img src="Images/hangman.jpeg">
+            </div>
+            <div id="fullCover"></div>
+
+            <div id="headPortion"></div>
+
+        </div>
+
+        <button id="reveal" onclick="reveal()">Reveal</button>
+        
+        <script>
+            var click = 0;
+            const fullCover = document.getElementById("fullCover");
+
+
+            function reveal(){
+                click++;
+
+
+                if (click == 1)
+                {
+                    fullCover.className = "uncover";
+                }
+            }
+            
+        </script>
+    </body>
+</html>
