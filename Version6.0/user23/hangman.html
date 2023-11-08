@@ -13,9 +13,9 @@
                 position: absolute;
                 top: 327px;
                 left: 150px;
-                height:472px;
+                height: 472px;
                 width: 237px;
-                background-color:rgba(250, 3, 3, 0);
+                background-color:rgb(255, 255, 255);
             }
 
 
@@ -23,11 +23,61 @@
                 position: absolute;
                 top: 410px;
                 left: 150px;
-                height:350px;
+                height: 350px;
                 width: 237px;
-                background-color: blue;
+                background-color: rgb(255, 255, 255);
             }
 
+            #leftArm{
+                position: absolute;
+                top: 405px;
+                left: 255px;
+                height: 150px;
+                width: 20px;
+                rotate: 15deg;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #rightArm{
+                position: absolute;
+                top: 365.5px;
+                left: 315px;
+                height:195px;
+                width: 24.5px;
+                rotate: 350deg;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #leftLeg{
+                position: absolute;
+                top: 537px;
+                left: 275px;
+                height:225px;
+                width: 29px;
+                rotate: 351deg;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #rightLeg{
+                position: absolute;
+                top: 565px;
+                left: 315px;
+                height:200px;
+                width: 15px;
+                rotate: 165deg;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #rightLeg2{
+                position: absolute;
+                top: 590px;
+                left: 312px;
+                height:187px;
+                width: 24px;
+                rotate: 167deg;
+                background-color: rgb(255, 255, 255);
+            }
+           
 
             .uncover{
                 display: none;
@@ -54,6 +104,15 @@
 
             <div id="headPortion"></div>
 
+            <div id="leftArm"></div>
+
+            <div id="rightArm"></div>
+
+            <div id="leftLeg"></div>
+
+            <div id="rightLeg"></div>
+
+            <div id="rightLeg2"></div>
 
 
 
@@ -71,8 +130,12 @@
         <script>
             var click = 0;
             const fullCover = document.getElementById("fullCover");
-            const headPortion = document.getElementById("headPortion");
-
+            const headPortion = document.getElementById("headPortion")
+            const leftArm = document.getElementById("leftArm");
+            const rightArm = document.getElementById("rightArm");
+            const leftLeg = document.getElementById("leftLeg");
+            const rightLeg = document.getElementById("rightLeg");
+            const rightLeg2 = document.getElementById("rightLeg2");
 
 
 
@@ -86,7 +149,27 @@
                 }
                 if (click == 2)
                 {
-                    headPortion.className = "uncovered";
+                    headPortion.className = "uncover";
+                }
+                if (click == 3)
+                {
+                    leftArm.className = "uncover";
+                }
+                if (click == 4)
+                {
+                    rightArm.className = "uncover";
+                }
+                if (click == 5)
+                {
+                    leftLeg.className = "uncover";
+                }
+                if (click == 6)
+                {
+                    rightLeg.className = "uncover";
+                }
+                if (click == 6)
+                {
+                    rightLeg2.className = "uncover";
                 }
             }
 
