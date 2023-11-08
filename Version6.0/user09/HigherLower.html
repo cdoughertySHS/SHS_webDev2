@@ -2,6 +2,14 @@
 <html>
     <head>
         <style>
+            .red{
+                color: red;
+            }
+
+            .green{
+                color: green;
+                font-size: larger;
+            }
 
         </style>
     </head>
@@ -13,46 +21,65 @@
 
         <p>Guess: <input id="guess" type="number"> <button id="enter"; onclick="guessButton()">Enter</button></p>
 
-        <p id="feedback"></p>
+        <p id="feedback" class="red"></p>
 
         <p>Attempts: <span id="attempts">0</span></p>
 
         <p>Previous Guesses: <span id="prev"></span></p>
 
+        <p><button id="reset"; onclick="resetButton()">Reset</button></p>
+
 
         <script>
             const ans = Math.floor(Math.random()*100+1);
+            var count = 0;
 
             alert(ans);
 
             function guessButton(){
                 const guess = document.getElementById("guess");
                 const feedback = document.getElementById("feedback");
+                const attempts = document.getElementById("attempts");
                 
                 var num = guess.value;
 
+                feedback.innerText = "";
+
                 if(ans==num){
-                    feedback.innerText = "";
                     feedback.append("Correct!");
+                    feedback.className = "green"
                     prev.append(num);
                 }
 
                 if(ans>num){
-                    feedback.innerText = "";
                     feedback.append("Higher");
                     prev.append(num);
                     prev.append(", ");
                 }
 
                 if(ans<num){
-                    feedback.innerText = "";
                     feedback.append("Lower");
                     prev.append(num);
                     prev.append(", ");
                 }
 
+                count++;
+                attempts.innerText= count;
+
                 
             }
+
+            function resetButton(){
+                const guess = document.getElementById("guess");
+                const feedback = document.getElementById("feedback");
+                const attempts = document.getElementById("attempts");
+                const reset = document.getElementById("reset");
+
+                feedback.innerText = "";
+                prev.innerText = "";
+                attempts.innerText = "";
+                guess.innerText = "";
+            }    
 
         </script>
     </body>
