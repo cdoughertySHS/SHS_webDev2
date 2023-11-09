@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgba(127, 255, 212, 0.706);
+            }
+
+            .red{
+                color: red;
+            }
+
+            .green{
+                color: rgb(7, 210, 7);
+                font-size: larger;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1><center>Higher or Lower</center></h1>
+        
+        <h3>Guess a number between 1 and 100</h3>
+        
+        <p>GUESS: 
+            <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button>
+        </p>
+        
+        <h3>Higher Or Lower?</h3>
+        <h3 id="feedback" class="red"></h3>
+        <h3>Right?</h3>
+        <h4 id="rightFeedback"></h4>
+        
+        <p>Attempts: <span id="attempts">0</span></p>
+
+        <p>Previous Guesses: <span id="previous"></span></p>
+
+        <p>Reset: 
+            <button id="reset" onclick="resetButton()">Reset</button>
+        </p>
+
+        <script>
+            const ans = Math.floor(Math.random()*100+1);
+            var count = 0;
+
+            alert(ans);
+            
+            function guessButton(){
+                const guess = document.getElementById("guess");
+                const feedback = document.getElementById("feedback");
+                const attempts = document.getElementById("attempts");
+                
+                var num = guess.value;
+                feedback.innerText = "";
+
+                if (ans==num){
+                    rightFeedback.append("CORRECT");
+                    rightFeedback.className = "green";
+                }
+
+                if (ans<num){
+                    feedback.append("LOWER");
+                }
+
+                if (ans>num){
+                    feedback.append("HIGHER");
+                }
+
+                count++;
+                attempts.innerText = count;
+
+                previous.append(num + " ")   
+            }
+
+            function resetButton(){
+                {
+                location. reload()
+                }
+            }
+        </script>
+    </body>
+</html>
