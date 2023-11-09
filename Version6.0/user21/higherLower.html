@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+
+    </head>
+
+
+    <body>
+      <h1><center>Higher or Lower</center></h1>
+
+      <h3>Guess a number from 1-100.</h3>
+
+      <p>GUESS: 
+        <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button> 
+      </p>
+
+      <p id="feedback">Sample</p>
+
+      <p>Attempts: <span id="attempts">0</span></p>
+
+      <p>Previous Guesses: <span id="previous"></span></p>
+
+
+
+
+        <script>
+            const ans = Math.floor(Math.random()*100+1);
+
+
+
+
+            function guessButton(){
+                const guess = document.getElementById("guess");
+
+                var num = guess.value;
+
+                alert(ans);
+            }
+
+
+
+
+        </script>  
+    </body>
+</html>
