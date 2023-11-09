@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="icon" type="image/x-icon" href="images/Ayumi Yuki pfp_.jpeg"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+            
+        <style type="text/css">
+            a >.fa {
+                font-size: xxx-large;
+            }
+            .cardContainer{
+                display: inline-block;
+                margin: 3%;
+                perspective: 800px;
+            }
+            .flipper {
+                position: relative;    
+                transition: 2.5s;
+                transform-style: preserve-3d;
+            }
+            .front, .back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 320px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                backface-visibility: hidden;
+            }
+            .front{
+                z-index:2;
+            }
+            .back{
+                transform:rotateY(180deg);
+            }
+            img {
+                width: 100%;
+            }
+            .cardContainer, .front, .back {
+                width: 250px;
+                height: 320px;
+            }
+            .cardContainer:hover .flipper {
+                transform: rotateY(180deg);
+            }
+            .caption, .back h2 {
+                font-size: 1.7em;
+                padding: 10px 10px 0 10px;
+                margin: 0;
+                text-align: center;
+                color: black;
+            }
+            p.caption {
+                position: absolute;
+
+            }
+            .description {
+                font-size: 0.9em;
+                padding: 0 20px 20px 20px;
+                text-align: left;
+            }
+            #title {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #poster {
+                width:500px;
+                margin-right: 50px;
+            }
+            td {
+                padding: 20px;
+            }
+            #pfp {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="menu">
+            <div class="col-sm-12">
+                <nav class="nav nav-pills">
+                    <a class="nav-link home" aria-current="page" href="index.html"><b><i class="fa fa-transgender-alt" aria-hidden="true"></i></b></a>
+                    <a class="nav-link hover" href="AboutMe.html">About Me</a>
+                    <a class="nav-link hover" href="ArtGallery.html">My Art</a>
+                    <a class="nav-link here" href="Favorites.html">Favorites</a>
+                </nav>
+            </div>
+        </div>
+        <center>
+        <main id="wideMargin">
+            <div id="gallery">
+                <h1 id="title">Games</h1>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Games/Subnautica.jpeg">
+                            <p class="caption">Subnautica</p>
+                        </div>
+                        <div class="back">
+                            <h2>Summary:</h2>
+                            <p class="description">Subnautica is an underwater open-world survival game. You play as a crew member on the Aroura, which ends up crash-landing on an alien planet. Collect resources to survive and venture deeper do discover the secrets of this planet. <br> My review: Very good, will give you thalassaphobia. 9.5/10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Games/Minecraft.jpeg">
+                            <p class="caption">Minecraft</p>
+                        </div>
+                        <div class="back">
+                            <h2>Summary:</h2>
+                            <p class="description">Minecraft is an open-world 3d survival game with practically no limits. Every world is randomly generated and everything is cubic. There are no rules or limits other than your imagination. <br> My review: One of my top favorite games of all time. It brings me so many good memories. 9.9/10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Games/OneShot.jpeg"> 
+                            <p class="caption">OneShot</p>
+                        </div>
+                        <div class="back">
+                            <h2>Summary:</h2>
+                            <p class="description">OneShot is a story-driven 2d puzzle game. You follow Niko, a small child who awoke in a strange world, destined to return the light to it. <br> My review: An incredibly underrated game and the solutions to the puzzles are really creative. Apparently it's also different the second playthrough. 9/10 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Games/Ghostrunner.jpeg">
+                            <p class="caption">Ghostrunner</p>
+                        </div>
+                        <div class="back">
+                            <h2>Summary:</h2>
+                            <p class="description">Ghostrunner is a fast-paced 3d platforming game where you play as a... well... Ghostrunner, making your way through levels and killing enemies to get your abilities back and take down the opressive leader, with your AI companion, The Architect. <br> My review: You end up dying a lot in this game, which can get frustrating, but it can get really satisfying at times. 8/10 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Games/VRChat.jpeg">
+                            <p class="caption">VRChat</p>
+                        </div>
+                        <div class="back">
+                            <h2>Summary:</h2>
+                            <p class="description">VRChat is an online VR chatroom game. It's a very community based game that houses over 25,000 worlds and millions of avatars to choose from. My review: There's so many things to do in this game it's honestly crazy. From magnificent scenery to incredibly complex and fun games. This game is 100% worth the try. 10/10 </p>
+                        </div>
+                    </div>
+                </div><div class="cardContainer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/Games/Beat_Saber.jpeg">
+                            <p class="caption">Beat Saber</p>
+                        </div>
+                        <div class="back">
+                            <h2>Summary:</h2>
+                            <p class="description">Beat Saber is a Virtual Reality rythm game where you have to slice incoming "bloqs" in the direction of the arrows. <br> My review: This is a relatively small game, but once you add mods to the mix, that's when things get interesting, with thousands of songs to choose from, some really well designed and beautiful. When charts are made well, it's really fun. 8.5/10 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="container">
+            <p>    
+                <h1 id="title">Musical Artists</h1>
+                <table>
+                    <tr>
+                        <td><a href="https://www.youtube.com/@AJDiSpirito"><img src="images/Artists/AJ-Dispirito.jpeg" id="pfp"></a></td>
+                        <td><a href="https://www.youtube.com/@Ayase_YOASOBI"><img src="images/Artists/Yoasobi.jpeg" id="pfp"></a></td>
+                        <td><a href="https://www.youtube.com/@lisaSMEJ"><img src="images/Artists/LiSA.jpeg" id="pfp"></a></td>
+                        <td><a href="https://www.youtube.com/@YonKaGor"><img src="images/Artists/YonKa.jpeg" id="pfp"></a></td>
+                    </tr>
+                    <tr>
+                        <td>AJ Dispirito</td>
+                        <td>Ayase/YOASOBI</td>
+                        <td>LiSA</td>
+                        <td>YonKaGor</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youtube.com/@TheLivingTombstone"><img src="images/Artists/TLT.jpeg" id="pfp"></a></td>
+                        <td><a href="https://www.youtube.com/@mysteryskulls"><img src="images/Artists/MysterySkulls.jpeg" id="pfp"></a></td>
+                        <td><a href="https://www.youtube.com/@SIAMESmusic"><img src="images/Artists/SIAMES.jpeg" id="pfp"></a></td>
+                        <td><a href="https://www.youtube.com/@CG5"><img src="images/Artists/CG5.jpeg" id="pfp"></a></td>
+                    </tr>
+                    <tr>
+                        <td>The Living Tombstone</td>
+                        <td>Mystery Skulls</td>
+                        <td>SIAMES</td>
+                        <td>CG5</td>
+                    </tr>
+                </table>
+            </p>
+        
+            <p>
+                <h1 id="title">Animated Shows</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Creator</th>
+                            <th>Can be found on</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td><img src="images/Shows/HelluvaBoss.jpg" id="poster"></td>
+                        <td> Vivziepop/Vivienne Medrano</td>
+                        <td>YouTube</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Shows/GwainSaga.webp" id="poster"></td>
+                        <td>GeoExe</td>
+                        <td>YouTube</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Shows/MurderDrones.webp" id="poster"></td>
+                        <td>Liam Vickers</td>
+                        <td>YouTube</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Shows/DigitalCircus.webp" id="poster"></td>
+                        <td>Gooseworx</td>
+                        <td>YouTube</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Shows/OwlHouse.jpg" id="poster"></td>
+                        <td>Dana Terrace</td>
+                        <td>YouTube/Disney+</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Shows/GravityFalls.jpeg" id="poster"></td>
+                        <td>Alex Hirsch</td>
+                        <td>YouTube/Disney+</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+        </center>
+        
+        <footer class="page-footer font-small blue">
+            <div class="footerTop">
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=y8WCI9YFnFN4dLN9">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <br>
+                    <h6><b>YouTube</b></h6>
+                </a>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2020 (bootstrap) Copyright:
+            <a href="/"> MDBootstrap.com</a>
+            </div>
+        </footer>
+    </body>
+</html>

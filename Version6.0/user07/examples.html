@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+     
+    </head>
+
+    <body>
+        <!--USER INTERFACE-->
+        <div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            Adjective:
+                        </td>
+                        <td>
+                            <input type="text" id="adjOne">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <p>
+                    Have a <span id="blankOne"></span> Halloween!
+                </p>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            Noun:
+                        </td>
+                        <td>
+                            <input type="text" id="nouOne">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <p>
+                    Woah! look at that <span id="blankTwo"></span>!
+                </p>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            Adjective:
+                        </td>
+                        <td>
+                            <input type="text" id="adjTwo">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <p>
+                    That's a pretty <span id="blankThree"></span> piece of art!
+                </p>
+            </div>
+            <button id="Enter" onclick="madlib()">Enter Answers</button>
+        </div>
+        <!--END USER INTERFACE-->
+        <script>
+            function madlib() {
+                const wordOne = document.getElementById("adjOne").value;
+                const firstSpan = document.getElementById("blankOne");
+                blankOne.append(wordOne);
+
+                const wordTwo = document.getElementById("nouOne").value;
+                const secondSpan = document.getElementById("blankTwo");
+                blankTwo.append(wordTwo);
+                
+                const wordThree = document.getElementById("adjTwo").value;
+                const thirdSpan = document.getElementById("blankThree");
+                blankThree.append(wordThree);
+            }
+        </script>
+    </body>
+
+</html>
