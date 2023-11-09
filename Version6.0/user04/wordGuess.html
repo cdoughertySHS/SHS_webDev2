@@ -1,0 +1,135 @@
+<DOCTYPE html>
+
+<html>
+    <head>
+       <style>
+           #container{
+               position: relative;
+           }
+
+           #fullCover{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height:180px;
+            width: 237px;
+            background-color: rgb(255, 255, 255);
+           
+             }
+
+           .uncover{
+             display: none;
+           }
+
+           #headPortion{
+            position: absolute;
+            top: 61px;
+            left: 0px;
+            height:140px;
+            width: 237px;
+            background-color: rgb(255, 255, 255);
+          
+           
+           }
+           #leftArm{
+            position: absolute;
+            top: 65px;
+            left: 0px;
+            height:30px;
+            width: 97px;
+            background-color: rgb(255, 255, 255);
+         
+           }
+           #rightArm{
+            position: absolute;
+            top: 65px;
+            left: 101px;
+            height:30px;
+            width: 97px;
+            background-color: rgb(255, 255, 255);
+        
+           }
+           #leftLeg{
+            position: absolute;
+            top: 115px;
+            left: 101px;
+            height:60px;
+            width: 27px;
+            background-color: rgb(255, 255, 255);
+       ;
+           }
+           #rightLeg{
+            position: absolute;
+            top: 115px;
+            left: 72px;
+            height:60px;
+            width: 27px;
+            background-color: rgb(255, 255, 255);
+           
+           }
+
+
+
+       </style>
+
+    </head>
+
+
+
+
+    <body>
+        <div id="container">
+            <div id="images"></div>
+                 <img src="images/STICK.png">
+               
+            <div id="fullCover"></div>
+            <div id="headPortion"></div>
+            <div id="leftArm"></div>
+            <div id="rightArm"></div>
+            <div id="leftLeg"></div>
+            <div id="rightLeg"></div>
+
+
+        </div>
+          <button id="reveal" onClick="reveal()"> Reveal</button>
+
+        <script>
+            var click = 0;
+            const fullCover = document.getElementById("fullCover");
+
+
+            function reveal(){
+                click++;
+
+
+                if (click == 1)
+                {
+                    fullCover.className = "uncover";
+                }
+                if (click == 2)
+                {
+                    headPortion.className = "uncover";
+                }
+                if (click == 3)
+                    leftArm.className = "uncover";
+                
+                if (click == 4)
+                    rightArm.className = "uncover";
+                
+                if (click == 5)
+                    leftLeg.className = "uncover";
+
+                if (click == 6)
+                    rightLeg.className = "uncover";
+            }
+
+
+
+        
+        </script>
+    </body>
+
+
+
+
+</html>
