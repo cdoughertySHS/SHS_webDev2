@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<head>
+
+    
+
+<style>
+
+    .element::-webkit-scrollbar { width: 0 !important }
+    
+    body{
+        background-color:black;
+        color: rgb(4, 255, 7);
+        font-family:'Courier New', Courier, monospace;
+        max-width:80vw;
+        margin:auto;
+    }
+
+    div{
+        margin-left:auto;
+        margin-right:auto;
+        font-size: .25vw;
+        display:flex;
+        height:20;
+        margin: 0px;
+        
+    }
+
+    #terminal{
+        max-height: 95vh;
+        overflow-y: hidden;        
+    }
+
+    #userIn{
+        background-color:black;
+        border: 0px;
+        color: rgb(4, 255, 79);
+        font-family:'Courier New', Courier, monospace;
+        font-size: .5vw;
+        margin:0px;
+        width: 100%;
+    }
+
+    #userEntries{
+        margin: 0px;
+        font-size: .5vw;
+        overflow-x:hidden;
+    }
+
+    #userIn{
+        padding:0px;
+    }
+    #userIn:focus{
+        outline: none;
+    }
+
+    input{
+        margin:0px;
+    }
+</style>
+
+
+</head>
+
+<body>
+    <main>
+        <div id="terminal">
+            <p id="userEntries">C:\> <br>
+                ********************************************************************************************************************************************************************
+                ********************************************************************************************************************************************************************
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▄████████&nbsp&nbsp&nbsp&nbsp▄████████&nbsp▀█████████▄&nbsp&nbsp&nbsp&nbsp&nbsp▄████████&nbsp&nbsp&nbsp&nbsp▄████████&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▄█&nbsp&nbsp&nbsp&nbsp&nbsp█▄&nbsp&nbsp&nbsp&nbsp&nbsp▄████████&nbsp▀█████████▄&nbsp&nbsp████████▄&nbsp&nbsp&nbsp&nbsp&nbsp▄████████&nbsp&nbsp▄█&nbsp&nbsp&nbsp&nbsp█▄&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp███&nbsp&nbsp&nbsp▀███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp█▀&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp█▀&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp█▀&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp█▀&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp▄███▄▄▄██▀&nbsp&nbsp&nbsp▄███▄▄▄&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▄███▄▄▄▄██▀&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp▄███▄▄▄&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▄███▄▄▄██▀&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp▄███▄▄▄&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▀███████████&nbsp▀███████████&nbsp▀▀███▀▀▀██▄&nbsp&nbsp▀▀███▀▀▀&nbsp&nbsp&nbsp&nbsp&nbsp▀▀███▀▀▀▀▀&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp▀▀███▀▀▀&nbsp&nbsp&nbsp&nbsp&nbsp▀▀███▀▀▀██▄&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp▀▀███▀▀▀&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp██▄&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp█▄&nbsp&nbsp▀███████████&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp█▄&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp██▄&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp█▄&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▄█&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp███&nbsp▄█▄&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp███&nbsp&nbsp&nbsp▄███&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▄████████▀&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp█▀&nbsp&nbsp▄█████████▀&nbsp&nbsp&nbsp&nbsp██████████&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp███&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▀███▀███▀&nbsp&nbsp&nbsp&nbsp██████████&nbsp▄█████████▀&nbsp&nbsp████████▀&nbsp&nbsp&nbsp&nbsp██████████&nbsp&nbsp▀██████▀&nbsp&nbsp&nbsp&nbsp
+                ********************************************************************************************************************************************************************
+                ********************************************************************************************************************************************************************
+                <br>
+                <br>
+                Enter the number for the website you wish to open.
+                <br>
+                <br>
+                1) Kalid's Site <br>
+                2) Emry's Site <br>
+                3) Jaiden's Site <br>
+                4) Random Entries (Ben's Site) <br>
+                5) Sam's Site <br>
+                6) Andrew's Site <br>
+                7) Caden's Site <br>
+                8) Kendall's Site <br>
+                9) Ayden's Site <br>
+                10) Javin's Site <br>
+                11) Gen Z Psychology (Averie's site) <br>
+                12) AJ's Site <br>
+                13) AJ's Site <br>
+                14) Keynon's Site
+
+
+
+                <br>
+
+            </p>
+        </div>
+        <div id="textEntry">
+            <input id="userIn" type="text" autocomplete="off" onkeypress="addText(event)" value="C:\> ">
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        const userIn = document.getElementById("userIn");
+        const userEntries = document.getElementById("userEntries");
+        
+        function addText(event)
+        {
+            if (event.key=="Enter")
+            {
+                var inputVal = userIn.value;
+                var br = document.createElement("br");
+                userEntries.append(br);
+                userEntries.innerText += inputVal;
+                userIn.value = "C:\\> ";
+
+                terminal.scrollTop = terminal.scrollHeight;
+                userIn.setSelectionRange(5,5);
+                userIn.focus()
+
+                if (inputVal == "C:\\\> 1"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user01/index.html"
+                }
+                if (inputVal == "C:\\\> 2"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user07/index.html"
+                }
+                if (inputVal == "C:\\\> 3"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user04/index.html"
+                }
+                if (inputVal == "C:\\\> 4"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user08/index.html"
+                }
+                if (inputVal == "C:\\\> 5"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user11/index.html"
+                }
+                if (inputVal == "C:\\\> 6"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user13/index.html"
+                }
+                if (inputVal == "C:\\\> 7"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user15/index.html"
+                }
+                if (inputVal == "C:\\\> 8"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user17/index.html"
+                }
+                if (inputVal == "C:\\\> 9"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user21/index.html"
+                }
+                if (inputVal == "C:\\\> 10"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user22/AboutMe%20.html"
+                }
+                if (inputVal == "C:\\\> 11"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user23/index.html"
+                }
+                if (inputVal == "C:\\\> 12"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user25/index.html"
+                }
+                if (inputVal == "C:\\\> 13"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user26/index.html"
+                }
+                if (inputVal == "C:\\\> 14"){
+                    window.location.href="http://shakonet.isd720.com/SHS_webdev2/Version6.0/user29/index.html"
+                }
+
+
+            }
+        }
+
+        userIn.setSelectionRange(5,5);
+        userIn.focus();
+
+    </script>
+</body>
