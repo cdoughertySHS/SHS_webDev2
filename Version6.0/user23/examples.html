@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+    <!-- User Interface -->
+        
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        adjective:
+                    </td>
+
+                    <td>
+                        <input type="text" id="adjOne">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter" onclick="madlib()">Enter</button>
+        </div>
+
+        <div>
+            <p>
+                Have a <span id="blankOne"></span> Halloween
+            </p>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        verb:
+                    </td>
+
+                    <td>
+                        <input type="text" id="verbOne">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter" onclick="madlib()">Enter</button>
+        </div>
+
+        <div>
+            <p>
+                I am <span id="blankTwo"></span> right now
+            </p>
+        </div>
+    
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        noun:
+                    </td>
+
+                    <td>
+                        <input type="text" id="nounOne">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter" onclick="madlib()">Enter</button>
+        </div>
+
+        <div>
+            <p>
+                I'm going to <span id="blankThree"></span> tomorrow
+            </p>
+        </div>
+
+        <!-- END User Interface-->
+        <script>
+            function madlib(){
+                const wordOne = document.getElementById("nounOne").value;
+                const firstspan = document.getElementById("blankThree");
+                blankThree.append(wordThree);
+            }
+
+        </script>
+    </body>
+</html>
