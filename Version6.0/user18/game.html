@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+    <head>
+        <style>
+            #container{
+                position: relative;
+            }
+
+
+
+
+            #fullCover{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height:472px;
+                width: 237px;
+                background-color:white;
+            }
+
+
+
+
+            #headPortion{
+                position: absolute;
+                top: 195px;
+                left: 0px;
+                height:277px;
+                width: 237px;
+                background-color:white;
+            }
+
+
+            #leftArm{
+                position: absolute;
+                top: 245px;
+                left: 0px;
+                height:20px;
+                width: 108px;
+                background-color:white;
+            }
+            .uncover{
+                display: none;
+            }
+
+            .parent {
+             position: relative;
+             top: 0;
+             left: 0;
+             }
+             .image1 {
+             position: relative;
+             top: 0;
+             left: 0;
+              border: 1px red solid;
+            }
+            .image2 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+          border: 1px green solid;
+              }
+
+
+              
+
+
+
+        </style>
+    </head>
+
+   
+
+
+
+
+
+
+    <body>
+        <div id="container">
+            <div id="image">
+                <img src="Body.png">
+            </div>
+
+
+            <div id="fullCover"></div>
+
+
+
+
+            <div id="headPortion"></div>
+
+
+            <div id="leftArm"></div>
+
+            
+
+            
+
+            <div class="slice s1"></div>
+            
+            <img class="imgA1" src="images/figure man.png">
+            
+
+           
+        
+            
+  </div>
+
+
+
+        </div>
+
+
+
+
+        <button id="reveal" onclick="reveal()">Reveal</button>
+
+        <script>
+            var click = 0;
+            const fullCover = document.getElementById("fullCover");
+            const headPortion = document.getElementById("headPortion");
+
+
+
+
+
+
+
+
+            function reveal(){
+                click++;
+
+
+
+
+                if (click == 1)
+                {
+                    fullCover.className = "uncover";
+                }
+                if (click == 2)
+                {
+                    headPortion.className= "uncover";
+                }
+                if (click == 3)
+                {
+                    leftArm.className = "uncover";
+                }
+
+
+            }
+
+
+
+
+            
+
+           
+
+
+
+
+
+
+
+
+
+
+
+           
+</script>
+</body>
+</html>
+
+
