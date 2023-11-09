@@ -4,17 +4,19 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/style.css">
         <style>
-            li{
-                margin: 10px;
-                background-color: aquamarine;
-                list-style: none;
+            img{
+                width: 250px;
+            }
+
+            body{
+                background-color: rgba(127, 255, 212, 0.393);
             }
         </style>
     </head>
     <body>
         <div class="menu">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a href="http://shakonet.isd720.com" class="navbar-brand">‎ ‎ About Me</a>
+                <a href="http://shakonet.isd720.com" class="navbar-brand">‎ ‎ My favorite Music</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" 
                         data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -23,19 +25,68 @@
                     <div class="navbar-nav">       
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="manga.html" class="nav-item nav-link active">Manga</a>
-                        <a href="music.html" class="nav-item nav-link active">Music</a>
+                        <a href="music.html" class="nav-item nav-link active" tabindex="-1">Music</a>
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="container">
-            <p>I am a student at shakopee High School. I am on the swim team. I take many accelerated classes. I am in the science and technology academy. I also have many other interests including:</p>
-            <ul>
-                <li><h3><a href="manga.html">Manga</a></h3></li>
-                <li><h3><a href="music.html">Music</a></h3></li>
-            </ul>
-            <p>Those things are what this website is about. Some of my favorite manga and bands will be listed on the other pages on this website. I'll also list where you can find them to check them out for yourself.</p>
-        </div>
+            <table>
+                <thead>
+                    
+                        <th>Number</th>
+                        <th>Artist</th>
+                        <th>Description</th>
+                        <th>Album Art</th>
+                    
+                </thead>
+                 <tbody>
+                <tr>
+                   <td colspan="4">My favorite band is a band called <i>beartooth</i>. They are an all around great band that has very little bad songs.</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="https://open.spotify.com/album/5WmbnLQhy8ndx8S7puEolG">Beartooth</a></td>
+                    <td>Beartooth is an American rock band founded by vocalist and multi-instrumentalist Caleb Shomo in Columbus, Ohio, in 2012. Originally Shomo performed every instrument when in the studio, before being joined by a four-piece band. Beartooth has been signed to Red Bull Records since 2013</td>
+                    <div class="container">  
+                        <div class="flipper">
+                            <div class="front">
+                                <td><img src=images/surface.jpeg alt="The Surface album cover"></td>
+                            </div>
+                        </div>
+                    </div> 
+                </tr>
+                <tr>
+                    <td colspan="4">If you want a band that is a lot harder and has a lot heavier sound, there is a band that can do that. The band that I like that does that is called <i>Slaughter to Prevail</i>.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://open.spotify.com/artist/24Oiw7BlvO1BETecDLJt6m">Slaughter to Prevail</a></td>
+                    <td>Slaughter to Prevail is a Russian deathcore band originally from Yekaterinburg, and based in Orlando, Florida. The band is currently signed to Sumerian Records and have toured through the US, Europe, Canada, and Asia.</td>
+                    <div class="container">  
+                        <div class="flipper">
+                            <div class="front">
+                                <td><img src=images/stp.jpeg alt="Kostolom album cover"></td>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <td colspan="4">If you like it softer though, you can check out my previous favorite band, <i>Shinedown</i>.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://open.spotify.com/artist/70BYFdaZbEKbeauJ670ysI">Shinedown</a></td>
+                    <td>Shinedown is an American rock band from Jacksonville, Florida, formed by singer Brent Smith in 2001 after the dissolution of his previous band, Dreve. Smith, still under contract with record label Atlantic Records.</td>
+                    <div class="container">   
+                        <div class="flipper">
+                            <div class="front">
+                                <td><img src=images/shine.jpeg alt="Planet Zero album cover"></td>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                </tbody>
+            </table>
         <div class="footer">
             <footer class="text-center">
                 <div class="container p-4 pb-0">
@@ -108,6 +159,5 @@
                     <a class="text-black" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                 </div>
               </footer>
-        </div>
     </body>
 </html>

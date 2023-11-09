@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .allButtons {
 	box-shadow: 0px 0px 5px 5px #3e7327;
 	background-color: #4CAF50;
@@ -83,4 +85,61 @@ h1, h2, h3, h4, h5, h6{
 
 *{
     text-align:center;
+}
+
+#knowledge > * {
+	border: 3px green solid;
+}
+
+p  {
+	background-color: #00ff0831;
+   }
+
+
+   div li::marker{
+	color: green;
+   }   
+
+#rainbow td:hover {
+	background-color: black;
+}
+
+ul li:first-child {
+	color: red;
+}
+
+ol li:first-child {
+	color: red;
+}
+
+ul li:nth-last-child(2) {
+	color: green;
+}
+
+ol li:nth-last-child(2) {
+	color: green;
+}
+
+ul li:last-child {
+	color: blue;
+}
+
+ol li:last-child {
+	color: blue;
+}
+
+div :hover :first-child {
+	color: blue;
+}
+
+div :hover :nth-last-child(2) {
+	color: green;
+}
+
+div :hover :last-child {
+	color: red;
+}
+
+td :hover{
+	background-color: #188609;
 }
