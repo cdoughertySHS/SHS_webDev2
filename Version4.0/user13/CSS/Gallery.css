@@ -8,7 +8,6 @@
   .container-card {
     display: inline-block;
     margin: 3%;
-    height: 400px;
     perspective: 1000px;
 }
 
@@ -22,8 +21,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 320px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     backface-visibility: hidden;
 }
@@ -42,7 +41,7 @@ img {
 
   .container, .front, .back {
     width: 250px;
-    height: 500px;
+    height: 320px;
  }
 
  .container:hover .flipper {
@@ -69,7 +68,7 @@ img {
   }
 
   a {
-    color: rgb(66, 182, 202);
+    color: black;
   }
 
- 
+  

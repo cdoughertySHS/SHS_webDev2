@@ -1,3 +1,6 @@
+	
+@import url(rainbow.css);
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -5,7 +8,6 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
 tr {
@@ -19,3 +21,104 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button-smallRadius {
+	border-radius: 8px;
+}
+
+.button-largeRadius {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td{
+	padding:20px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}
+.music{
+
+	background-color: aquamarine;
+    color: white;
+    border: 1px solid black;
+    border-radius: 100%;
+	padding: 60px;
+}
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  
+  #morecontent {
+	background-color: yellow;
+  }
+  
+  #hirebutton{
+	background-color:aqua;
+  }
+
+  #footertable{
+	background-color:Pink;
+  }
+  
+  #knowledge > * {
+	border: 3px red solid;
+  }
+  
+  p + * {
+	background-color: #FFFF00;
+  }
+
+  div li::marker{
+	color: red;
+  }
+  
+  div li::marker{
+	content:"😜 ";
+  }
+
+ #rainbow td:hover {
+	background-color: black;
+  }
+  
+  ul li:first-child {
+	color: blue;
+  }
+
+  ul li:last-child {
+	color: rgb(255, 51, 0);
+  }
+
+  ul::after {
+	content: " I will use";
+  }
