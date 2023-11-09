@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #container{
+                position: relative;
+            }
+
+            #fullCover{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 230px;
+                width: 232px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #guy1{
+                position: absolute;
+                top: 100px;
+                left: 0px;
+                height: 140px;
+                width: 232px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #middleRightCover{
+                position: absolute;
+                top: 0px;
+                left: 75px;
+                height: 140px;
+                width: 232px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #rightCover{
+                position: absolute;
+                top: 0px;
+                left: 150px;
+                height: 140px;
+                width: 232px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #middleBottom{
+                position: absolute;
+                top: 100px;
+                left: 75px;
+                height: 140px;
+                width: 232px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #rightBottom{
+                position: absolute;
+                top: 100px;
+                left: 150px;
+                height: 140px;
+                width: 232px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            #shutterstockCover{
+                position: absolute;
+                top: 220px;
+                left: 0px;
+                height: 20px;
+                width: 232px;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .uncover{
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="image">
+                <img src="images/6guys.jpeg">
+            </div>
+            <div id="fullCover"></div>
+        </div>
+
+        <div id="guy1">
+
+        </div>
+        <div id="middleRightCover">
+
+        </div>
+        <div id="rightCover">
+
+        </div>
+        <div id="middleBottom">
+
+        </div>
+        <div id="rightBottom">
+
+        </div>
+        <div id="shutterstockCover">
+
+        </div>
+        <button id="reveal" onclick="reveal()">Reveal</button>
+        <script>
+            var click = 0;
+            const fullCover = document.getElementById("fullCover");
+            const guy1 = document.getElementById("guy1");
+            function reveal(){
+                click++;
+
+                if (click == 1)
+                {
+                    fullCover.className = "uncover";
+                }
+
+                if (click == 2)
+                {
+                    middleRightCover.className = "uncover";
+                }
+                
+                if (click == 3)
+                {
+                    rightCover.className = "uncover";
+                }
+                
+                if (click == 4)
+                {
+                    guy1.className = "uncover";
+                }
+
+                if (click == 5)
+                {
+                    middleBottom.className = "uncover";
+                }
+
+                if (click == 6)
+                {
+                    rightBottom.className = "uncover";
+                }
+            }
+        </script>
+    </body>
+</html>
