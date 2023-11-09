@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Games
+  </title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 4.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column { 
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: px;
+  height: 20px
+}
+
+.card {
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 500px;
+  margin: 20px;
+  
+}
+
+.about-section {
+  padding: 60px;
+  text-align: center;
+  background-color: #0e0d0d;
+  color: white;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(251, 246, 246);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #3c0df7;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #f00e0e;
+}
+
+@media screen and (max-width:650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+body{
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+      
+
+    </style>
+    <link rel="icon" type="image/x-icon" href="images/face.ico" />
+</head>
+<body>
+
+  <menu>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="gallery.html" class="nav-item nav-link">Music</a>
+                <a href="games.html" class="nav-item nav-link">Games</a>
+
+                <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link disabled">Login</a>
+            </div>
+        </div>
+    </nav>
+</menu>
+
+<div class="container">
+  <h3>Keynons favorite Games </h3>
+  <p>this is a list of Keynons favorite Games to play</p>
+</div>
+<br>
+
+  
+<br>
+  <div class="column">
+    <div class="card">
+      <img src="images/forza5.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Forza Horizon 5</h2>
+        <p>Forza Horizon 5 is a racing video game set in an open world environment based in a fictional representation of Mexico</p>
+        <a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/">
+          <button id="button">Click</button>
+        </a>
+      </div>
+    </div>
+<br>
+    <div class="column">
+      <div class="card">
+        <img src="images/snowrunner.jpeg" style="width:100%"> 
+        <div class="container">
+          <h2>Snowrunner</h2>
+          <p>SnowRunner puts you in the driver's seat of powerful vehicles as you conquer extreme open environments with the most advanced terrain simulation ever. </p>
+          <a href="https://store.steampowered.com/app/1465360/SnowRunner/">
+            <button id="button">Click</button>
+          </a>
+        </div>
+      </div>
+<br>
+      <div class="column">
+        <div class="card">
+          <img src="images/riderr.jpeg" style="width:100%">
+          <div class="container">
+            <h2>Riders Republic</h2>
+            <p>Riders Republic is a massive multiplayer playground where you can play with bikes, skis, snowboards, wingsuits and rocket wingsuits in the great national parks of the United States as you build your career or join your friends in multiplayer activities.</p>
+            <a href="https://store.steampowered.com/app/2290180/Riders_Republic/">
+              <button id="button">Click</button>
+            </a>
+          </div>
+        </div>
+  
+    </div>
+
+ 
+
+  
+
+
+
+
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

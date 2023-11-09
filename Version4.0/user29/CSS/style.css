@@ -1,3 +1,6 @@
+@import url(rainbow.css);
+
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -103,7 +106,7 @@ h1, h2, h3, h4, h5, h6{
 	font-size: .5rem;
   }
   #morecontent {
-	background-color: yellow;
+	background-color: rgb(152, 175, 61);
   }
   #hireButtons{
 	background-color:  blue;
@@ -111,3 +114,35 @@ h1, h2, h3, h4, h5, h6{
   #footerTable{
 	background-color: pink;
   }
+  
+  #knowledge > * {
+	border: 3px red solid;
+   }
+   p + * {
+	background-color: #FFFF00;
+   }
+
+	div li::marker{
+	color: red;
+   }
+   
+   div > li::marker{
+	content:"😜";
+   }
+   
+   #rainbow td:hover {
+	background-color: black;
+   }
+
+   ul li:first-child {
+	color: blue;
+  } 
+
+  ul li:last-child {
+	color: rgb(22, 169, 127);
+  } 
+  
+  ul::after {
+	content: " end of the list";
+  }
+   
