@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+
+
+    </head>
+
+
+    <body>
+        <!-- User Interface -->
+
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        adjective:
+                    </td>
+
+
+                    <td>
+                        <input type="text" id="adjOne">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter" onclick="madlib()">Enter</button>
+        
+        </div>
+
+
+        <div>
+            <p>
+                Have a <span id="blankOne"></span> Halloween!
+            </p>
+            <p>
+                Happy <span id="blankTwo"></span> Year!
+            </p>
+            <p>
+                Merry <span id="blankThree"></span> Year!
+            </p>
+            <p>
+                Cheers to <span id="blankFour"></span> and Happy New Year!
+            </p>
+        </div>
+        </body>
+2
+
+        <!-- END user Interface-->
+
+
+
+        <script>
+            
+            function madlib(){
+                const wordOne = document.getElementById("adjOne").value;
+                const firstSpan = document.getElementById("blankOne");
+                blankOne.append(wordOne);
+                
+                const wordTwo = document.getElementById("adjOne").value;
+                const word2 = document.getElementById("blankTwo");
+                blankTwo.append(wordTwo);
+                
+                const wordThree = document.getElementById("adjOne");
+                const word3 = document.getElementById("blankThree");
+                blankThree.append(wordThree);
+                
+                const wordFour = document.getElementById("adjOne").value;
+                const word4 = document.getElementById("blankFour");
+                blankFour.append(wordFour);
+            }
+
+
+
+
+
+
+        </script>
+    </body>
+
+
+
+
+</html>
+
+
