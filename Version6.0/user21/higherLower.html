@@ -42,10 +42,11 @@
 
       <p>Attempts: <span id="attempts">0</span></p>
 
-      <p>Previous Guesses: <span id="previous"></span></p>
+      <p>Previous Guesses: <span id="prev"></span></p>
 
 
-
+      <p> <button id="resetButton" onclick="resetButton()">Reset<button></button></p>
+    
 
         <script>
             const ans = Math.floor(Math.random()*100+1);
@@ -82,20 +83,20 @@
                 count++;
             attempts.innerText = count;
 
-                previous.append(num + " ");
+                prev.append(num + " ");
 
             }
 
 
-            function reset(){
-                attempts.innerText = "";
-                feedback.innerText = "";
-                ans = Math.floor(Math.random()*100+1);
-                count = 0;
-                attempts.innerText = count;
-                prev.innerText = "";
-                feedback.className = "red";
-                enter.className = "";
+            function resetButton(){
+                {
+                    (onclick==resetButton)
+                    feedback.innerText = "";
+                    attempts.innerText = "0";
+                    prev.innerText = "";
+                    location. reload()
+                }
+
             }
 
 
