@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 4.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        #rainbow {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3 title" tabindex="0">Check out some cool ninja holds!</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <div id="gallery">
+            <p>Hover over the images to get a description</p>
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="images/batarang.webp" alt="Batarang">
+                  <p class="caption">Ninja Hold</p>
+                </div>
+                <div class="back">
+                  <a href="https://dgsninja.com/products/the-bat?" target="_blank">
+                    <h1>Batarang</h1>
+                  </a>
+                  <p class="description">The Bat is a lightweight traversal tool in the unique shape of a bat. You can either use both hands to slide along pipes, or use one hand to transfer between pipes. Both the bat-shaped design and black grit texture provide a comfortable and secure grip.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="images/boltcutters.webp" alt="Boltcutters">
+                  <p class="caption">Ninja Hold</p>
+                </div>
+                <div class="back">
+                  <a href="https://dgsninja.com/products/bolt-cutters?" target="_blank">
+                    <h1>Boltcutters</h1>
+                  </a>
+                  <p class="description">The Bolt Cutters were designed to challenge the upper body strength and grip of elite ninjas. This obstacle requires you to open and close the jaws of the Bolt Cutters to latch onto various solid structures, such as pipes, skyhooks, and rings.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="images/verticallimit.webp" alt="Floating Vertical Limit">
+                  <p class="caption">Ninja Hold</p>
+                </div>
+                <div class="back">
+                  <a href="https://www.monstro.ninja/product-page/floating-vertical-limit" target="_blank">
+                    <h1>Floating Vertical Limit</h1>
+                  </a>
+                  <p class="description">A 2-handed hanging vertical limit trainer sure to trip up any hanging line. It is 8" wide, with a 1cm ledge and grippy texture</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="container">
+            <div class="flipper">
+              <div class="front">
+                <img src="images/armassassin.webp" alt="Arm Assassin">
+                <p class="caption">Ninja Hold</p>
+              </div>
+              <div class="back">
+                <a href="https://www.monstro.ninja/product-page/napalm-s-nightmare-2-0-by-arm-assassin" target="_blank">
+                  <h1>Arm Assassin</h1>
+                </a>
+                <p class="description">This beast of a hold is made of solid steel with a 2 3/8th's rounded, free spinning grip on both sides. Guaranteed to test your grip!</p> 
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title">Example of a Footer Title</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>
