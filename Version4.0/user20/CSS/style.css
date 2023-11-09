@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -57,3 +59,31 @@ h1, h2, h3, h4, h5, h6{
 div {
   font-family: myFirstFont;
 }
+#knowledge > * {
+	border: 3px red solid;
+   }
+   p + * {
+	background-color: rgb(57, 180, 120);
+   }
+   div li::marker{
+	color: red;
+   }
+   p + * {
+	background-color: #afaf6c;
+  }
+  div li::marker{
+	color: rgb(157, 104, 104);
+  }
+  div li::marker{
+	content:"! ";
+  }
+  #rainbow td:hover {
+	background-color: rgb(0, 0, 0);
+  }
+  div:hover li {
+	color: rgb(65, 128, 65);
+  }
+  div:hover {
+	background-color: rgba(0, 0, 255, 0.358);
+  }
+  
