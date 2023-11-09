@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            #container{
+                position: relative;
+            }
+            #fullcover{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 1024px;
+                width: 1024px;
+                background-color: green;
+            }
+            #headportion{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 1024x;
+                width: 500px;
+                background-color: green;
+            }
+            
+            .uncover{
+                display: none;
+            }
+
+        </style>
+    </head>
+
+
+
+    <body>
+
+        <div id="container">
+        <div id="image">
+            <img src="golden.jpg">
+            </div>
+        <div id="fullcover"></div>
+
+        <div id="headportion"></div>
+
+    </div>
+    <button id="reveal" onclick="reveal()">reveal</button>
+
+        <script>
+            var click= 0;
+            const fullcover = document.getElementById("fullcover");
+            const headportion = document.getElementById("headportion");
+
+            function reveal(){
+                click++;
+                if (click == 1)
+                   { fullcover.className = "uncover";
+                }
+        
+            if(click==2)
+            {headportion.className = "uncovered"
+            }
+            }
+        </script>
+    </body>
+
+
+</html>
