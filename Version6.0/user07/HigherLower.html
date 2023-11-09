@@ -31,6 +31,8 @@
         <p> Attempts: <span id="attempts">0</span></p>
         <p>Previous Guesses: <span id="prev"></span></p>
 
+        <button id="Reset" onclick="reset()">Reset</button>
+
         <script>
             const ans = Math.floor(Math.random()*100+1);
             var count = 0;
@@ -43,7 +45,7 @@
 
                 var num = guess.value;
 
-                feedback.innerText = "";
+                feedback.innerText = " ";
                 
                 
                 
@@ -66,7 +68,7 @@
             }
 
             function reset(){
-                
+                location.reload()
             }
         </script>
     </body>

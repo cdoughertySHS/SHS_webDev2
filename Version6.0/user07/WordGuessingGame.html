@@ -21,14 +21,6 @@
                 width:604px;
                 background-color: white;
             }
-            #bodyPortion {
-                position: absolute;
-                top: 510px;
-                left: 0px;
-                height: 352px;
-                width:604px;
-                background-color: white;
-            }
             #rightArm {
                 position: absolute;
                 top: 180px;
@@ -74,7 +66,6 @@
             </div>
             <div id="fullCover"></div>
             <div id="headPortion"></div>
-            <div id="bodyPortion"></div>
             <div id="rightArm"></div>
             <div id="leftArm"></div>
             <div id="rightLeg"></div>
@@ -86,7 +77,6 @@
             var click = 0; 
             const fullCover = document.getElementById("fullCover");
             const headPortion = document.getElementById("headPortion");
-            const bodyPortion = document.getElementById("bodyPortion");
             const rightArm = document.getElementById("rightArm");
             const leftArm = document.getElementById("leftArm");
             const rightLeg = document.getElementById("rightLeg");
@@ -102,19 +92,16 @@
                     headPortion.className = "uncover";
                 }
                 if (click == 3){
-                    bodyPortion.className = "uncover";
+                    rightArm.className = "uncover";
                 }
                 if (click == 4){
-                    rightArm.classname = "uncover";
+                    leftArm.className = "uncover";
                 }
                 if (click == 5){
-                    leftArm.classname = "uncover";
+                    rightLeg.className = "uncover";
                 }
                 if (click == 6){
-                    rightLeg.classname = "uncover";
-                }
-                if (click == 7){
-                    leftLeg.classname = "uncover";
+                    leftLeg.className = "uncover";
                 }
             }
         </script>
