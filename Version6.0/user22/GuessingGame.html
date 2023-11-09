@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 
-
 <html>
-    <head>
 
-
+    <Head>
         <style>
-
-            
             #container{
                 position: relative;
             }
@@ -80,45 +76,12 @@
                 display: none;
             }
 
-            .red{
-                color: red;
-            }
 
-            .green{
-                color: green;
-                font-size: larger;
-            }
         </style>
-
-
-    </head>
-
-
+    </Head>
 
 
     <body>
-        <center><h1>Higher or Lower</h1></center>
-
-
-        <p>Guess a number from 1-100.</p>
-
-
-        <p>Guess: 
-            <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button>
-            <button id="reveal" onclick="reveal()">Enter</button><h6>:must press second button to work after 1 guess and so on</h6>
-        </p>
-
-
-        <p id="feedback"></p>
-
-
-        <p>Attempts: <span id="attempts">0</span></p>
-
-
-        <p>Previous Guesses: <span id="prev"></span></p>
-        <p>  <button id="ResetButton" onclick="resetButton()">Reset</button></p>
-        <p id ="Prev"></p>
-
         <div id="container">
             <div id="image">
                 <img src="images/Red.jpeg">
@@ -136,58 +99,13 @@
 
             <div id="rightarm"></div>
 
-            </div>  
+            </div>
+            <center><button id="reveal" onclick="reveal()">reveal</button></center>
+
 
         <script>
-            const ans = Math.floor(Math.random()*100+1);
-
-            var count = 0;
-             const fullCover = document.getElementById("fullCover");
-
-
-            function guessButton(){
-                const guess = document.getElementById("guess");
-                const feedback = document.getElementById("feedback");
-                const Attempts = document.getElementById("attempts");
-                const prev = document.getElementById("prev");
-                const ResetButton = document.getElementById("ResetButton")
-
-                feedback.innerText = "";
-                
-                var click = 0;
-
-                var num = guess.value;
-
-                count++;
-                attempts.innerText = count;
-
-                
- 
-                if (ans==num){
-                    feedback.append("Correct ");
-                    feedback.className = "green"
-                }
-                if (ans<num){
-                    feedback.append("lower");
-                    feedback.className = "red"
-                }
-                if (ans>num){
-                    feedback.append("higher");
-                    feedback.className = "red"
-                } 
-                (prev==num)
-                    prev.append(num + " ")
-
-                if (count==6){
-                    feedback.append("   You LOSE!  ")
-                    feedback.className = "red"
-                }
-
-
-                
-            }
-
             var click = 0;
+            const fullCover = document.getElementById("fullCover");
 
             function reveal(){
                 click++;
@@ -220,34 +138,9 @@
                     rightleg.className = "uncover";
                 }
             }
-              
 
-            
-            function resetButton(){
-                {
-                    (onclick==resetButton)
-                    feedback.innerText = "";
-                    attempts.innerText ="0";
-                    prev.innerText="";
-                    location. reload() 
-                }
-            }
-            
-            
-                    
+
+
         </script>
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
-
