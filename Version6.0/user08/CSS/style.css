@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
+/* font import template */
+.header{
+    background-color: #373443;
+}
+.center{
+    text-align: center;
+    margin-top: 1%;
+}
+
+.footer{
+    background-color: #373443;
+    padding: 0.5%;
+}
+.article{
+    background-color: #373443;
+}
+#featuredArticles{
+    display: flex;
+}
+.content{
+    display: flex;
+}
+/*
+ul{
+    list-style-type: none;
+}
+*/
+.sidebar{
+    background-color: #2F2D39;
+    height: 100%;
+}
