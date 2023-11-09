@@ -4,6 +4,26 @@
     <head>
 
 
+        <style>
+            body{
+                background-color: rgb(202, 255, 189);
+            }
+
+            .red{
+                color: red;
+            }
+           
+            .green{
+                color: green;
+                font-size: larger;
+            }
+
+
+
+        </style> 
+        
+        
+
     </head>
 
 
@@ -16,30 +36,68 @@
         <input id="guess" type="number"> <button id="enter" onclick="guessButton()">Enter</button> 
       </p>
 
-      <p id="feedback">Sample</p>
+
+
+      <h3 id="feedback" class="red";></h3>
 
       <p>Attempts: <span id="attempts">0</span></p>
 
-      <p>Previous Guesses: <span id="previous"></span></p>
+      <p>Previous Guesses: <span id="prev"></span></p>
 
 
-
+      <p> <button id="resetButton" onclick="resetButton()">Reset<button></button></p>
+    
 
         <script>
             const ans = Math.floor(Math.random()*100+1);
-
+            var count = 0;
+            
+            alert(ans);
 
 
 
             function guessButton(){
                 const guess = document.getElementById("guess");
+                const feedback = document.getElementById("feedback");
+                const attempts = document.getElementById("attempts");
+
 
                 var num = guess.value;
+            
 
-                alert(ans);
+                feedback.innerText = "";
+
+                if (ans==num){
+                    feedback.append("CORRECT");
+                    feedback.className = "green";
+                }
+
+                if (ans>num){
+                    feedback.append("HIGHER");
+                }
+
+                if (ans<num){
+                    feedback.append("LOWER");
+                }
+
+                count++;
+            attempts.innerText = count;
+
+                prev.append(num + " ");
+
             }
 
 
+            function resetButton(){
+                {
+                    (onclick==resetButton)
+                    feedback.innerText = "";
+                    attempts.innerText = "0";
+                    prev.innerText = "";
+                    location. reload()
+                }
+
+            }
 
 
         </script>  
