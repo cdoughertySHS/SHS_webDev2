@@ -1,0 +1,149 @@
+<input type="reset"><html>
+    <head>
+
+
+    </head>
+
+
+    <body>
+        <!-- User Interface -->
+
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                         adjective:
+                    </td>
+
+
+                    <td>
+                      <input type="text" id="adjOne">
+                    </td>
+                </tr>
+            </table>
+            <button id="Enter" onclick="madlib()">Enter</button>
+            <input type="submit" value="Submit">
+
+            <button onclick="myFunction()">Try it</button>
+        </form>
+
+
+        </div>
+
+
+        <div>
+            <p>
+                Have a <span id="blankOne"></span> Halloween!
+            </p>
+        </div>
+
+
+
+
+
+
+        <!-- END user Interface-->
+
+
+
+
+        <script>
+            
+            function madlib()  
+            var x = document.getElementById("mySpan");
+            var x = document.createElement("SPAN");
+
+            const wordOne = document.getElementById("adjOne").value;
+                const firstSpan = document.getElementById("blankOne");
+                blankOne.append(wordOne);
+            
+
+
+
+
+
+
+        </script>
+       <script src="javascript.js"></script>
+       
+
+      </script>
+
+    </body>
+   
+   
+    <html>
+        Value $<span id="Value">0</span> 
+        <button id="add">Add Value</button> 
+        <button id="reset">Reset</button>
+
+        
+
+        <body>
+           
+           <div id="dip"> Click the below buttons to hide or show this text. 
+           </div><br>
+           <button onclick="hide()"> Hide Element </button>
+           <button onclick="show()"> Show Element </button>
+           <script> 
+      
+            var a = 0;
+            var add = function(valueToAdd) {
+            a += valueToAdd;
+            document.getElementById('Value').innerHTML = a;
+             }
+
+            var reset = function() {
+             a = 0;
+             document.getElementById('Value').innerHTML = 0;
+              }
+              var addButton = document.querySelector("#add");
+              var resetButton = document.querySelector("#reset");
+
+              addButton.addEventListener("click", function() {
+             add(1);
+              })
+
+            resetButton.addEventListener("click", function() {
+            reset();
+             })
+
+        
+
+
+
+
+
+              function hide() {
+                 document.getElementById('dip').hidden = true
+              }
+              function show() {
+                 document.getElementById('dip').hidden = false
+              }
+              if (myGuess === randomNumber){
+              feedback.textContent = "You got it right!"
+              }
+              else if(myGuess > randomNumber) {
+              feedback.textContent = "Your guess was " + myGuess + ". That's too high. Try Again!"
+              }
+              else if(myGuess < randomNumber) {
+              feedback.textContent = "Your guess was " + myGuess + ". That's too low. Try Again!"
+              }       
+              submitGuess.addEventListener('click', checkGuess)
+  
+              
+             
+            </script>
+            
+            
+
+           <input type="reset">
+           </body>
+           
+
+           </html>
+           
+
+</html>
+
